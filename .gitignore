@@ -1,0 +1,14 @@
+.idea
+.jasmine
+.lessons
+debug.html
+debug.js
+.myNotes
+.node_modules
+# Node Files #
+
+
+# IDEs
+.idea/*
+.vscode
+*.swp
