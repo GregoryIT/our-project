@@ -130,3 +130,36 @@ body {
   line-height: 22px;
   color: #FB765F;
 }
+.slider {
+  background: rgba(241, 241, 241, 0.9077);
+  height: 326px;
+}
+.slider .container .slider-panel {
+  padding: 40px 0;
+}
+.slider .container .slider-panel .slider-item {
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+}
+.slider .container .slider-panel .slider-item p {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #25233A;
+}
+.slider .container .slider-panel .slider-item button {
+  width: 140px;
+  height: 40px;
+  border: 2px solid #377EF9;
+  background: rgba(241, 241, 241, 0.9077);
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 22px;
+  color: #377EF9;
+  opacity: 0.9;
+}
