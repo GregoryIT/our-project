@@ -59,7 +59,7 @@ body {
 }
 .section-1 .section-1-content .section-1-content-left {
   padding-top: 50px;
-  height: 411px;
+  height: 420px;
 }
 .section-1 .section-1-content .section-1-content-left p {
   font-style: normal;
@@ -69,11 +69,12 @@ body {
   color: #333333;
 }
 .section-1 .section-1-content .section-1-content-left .rectangle {
-  width: 472px;
-  height: 91px;
+  width: 432px;
+  height: 51px;
   left: 149px;
   top: 330px;
   background: #C4C4C4;
+  padding: 20px;
 }
 .section-1 .section-1-content .section-1-content-left button {
   width: 200px;
@@ -88,7 +89,7 @@ body {
   color: #FFFFFF;
 }
 .section-1 .section-1-content .section-1-content-left .arrow-group {
-  width: 70px;
+  width: 90px;
 }
 .section-1 .section-1-content .section-1-content-right {
   height: 500px;
