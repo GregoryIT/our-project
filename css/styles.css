@@ -130,19 +130,19 @@ body {
   line-height: 22px;
   color: #FB765F;
 }
-.slider {
+.section-2 {
   background: rgba(241, 241, 241, 0.9077);
   height: 326px;
 }
-.slider .container .slider-panel {
+.section-2 .container .section-2-slider-panel {
   padding: 40px 0;
 }
-.slider .container .slider-panel .slider-item {
+.section-2 .container .section-2-slider-panel .section-2-slider-item {
   width: 160px;
   height: 150px;
   margin: 0 auto;
 }
-.slider .container .slider-panel .slider-item p {
+.section-2 .container .section-2-slider-panel .section-2-slider-item p {
   font-style: normal;
   text-align: center;
   font-weight: 600;
@@ -150,7 +150,7 @@ body {
   line-height: 22px;
   color: #25233A;
 }
-.slider .container .slider-panel .slider-item button {
+.section-2 .container .section-2-slider-panel .section-2-slider-item button {
   width: 140px;
   height: 40px;
   border: 2px solid #377EF9;
