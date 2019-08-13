@@ -174,6 +174,9 @@ body {
   line-height: 44px;
   color: #333333;
 }
+#section-3 .container .title {
+  margin-bottom: 50px;
+}
 #section-3 .container .row .section-3-card {
   width: 350px;
   height: 620px;
@@ -254,6 +257,12 @@ body {
   background: #FB765F;
   box-shadow: 0px 4px 15px rgba(251, 118, 95, 0.5);
   border-radius: 25px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 #section-3 .container .row .column {
   justify-content: space-around;
