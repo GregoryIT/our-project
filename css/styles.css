@@ -57,9 +57,6 @@ body {
 .section-1 {
   padding: 100px 0;
 }
-.section-1 .section-1-content {
-  padding-bottom: 110px;
-}
 .section-1 .section-1-content .section-1-content-left {
   padding-top: 50px;
   height: 411px;
@@ -92,6 +89,9 @@ body {
 }
 .section-1 .section-1-content .section-1-content-left .arrow-group {
   width: 70px;
+}
+.section-1 .section-1-content .section-1-content-right {
+  height: 500px;
 }
 .section-1 .section-1-content .section-1-content-right .card {
   padding: 22px;
@@ -153,6 +153,7 @@ body {
 .section-2 .container .section-2-slider-panel .section-2-slider-item button {
   width: 140px;
   height: 40px;
+  margin: 0 auto;
   border: 2px solid #377EF9;
   background: rgba(241, 241, 241, 0.9077);
   box-sizing: border-box;
@@ -162,4 +163,98 @@ body {
   line-height: 22px;
   color: #377EF9;
   opacity: 0.9;
+}
+#section-3 {
+  padding: 50px 0;
+}
+#section-3 .container p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #333333;
+}
+#section-3 .container .row .section-3-card {
+  width: 350px;
+  height: 620px;
+  position: relative;
+}
+#section-3 .container .row .section-3-card img[src="img/pl.svg"] {
+  border-radius: 10px;
+}
+#section-3 .container .row .section-3-card-contentBlock {
+  background-color: #ffffff;
+  position: absolute;
+  width: 260px;
+  height: 249px;
+  padding: 20px;
+  margin-left: 25px;
+  bottom: 0;
+  opacity: 0.9;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-title {
+  position: relative;
+  margin-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-title p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #25233A;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description {
+  position: relative;
+  justify-content: flex-start;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description img {
+  margin-right: 10px;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #25233A;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow {
+  position: relative;
+  margin: 30px 0;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .up {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #25233A;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .down {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #25233A;
+}
+#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #FB765F;
+  box-shadow: 0px 4px 15px rgba(251, 118, 95, 0.5);
+  border-radius: 25px;
+}
+#section-3 .container .row .column {
+  justify-content: space-around;
 }
