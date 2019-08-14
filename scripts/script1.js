@@ -44,41 +44,53 @@ $(document).ready(function () {
 //                 required: 'Please specify your name email',
 //                 email: 'Your email address must be in the format of name@domain.com'
 //             }
-
 //         },
 //         errorClass: 'errValidForm'
-
 //     });
-
-$(document).ready(function () {
-    //initialize swiper when document ready
-    var swiper2 = new Swiper('.swiper2', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: 60,
-        slidesPerView: 3,
-        navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2',
-        },
-    });
-
-    var swiper1 = new Swiper('.swiper1', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: 60,
-        slidesPerView: 3,
-        navigation: {
-            nextEl: '.swiper-button-next1',
-            prevEl: '.swiper-button-prev1',
-        },
-    });
-
-});
+//
+// $(document).ready(function () {
+//     var z = 3;
+//     var i = 60;
+//     if (window.matchMedia('(max-width: 1100px)').matches) {
+//         z = 2;
+//         i = 160;
+//     }
+//     if (window.matchMedia('(max-width: 1100px)').matches) {
+//         z = 2;
+//         i = 100;
+//     }
+//     if (window.matchMedia('(max-width: 720px)').matches) {
+//         z = 1;
+//         i = 1;
+//     }
+//     //initialize swiper when document ready
+//     var swiper2 = new Swiper('.swiper2', {
+//         direction: 'horizontal',
+//         loop: true,
+//         initialSlide: 0,
+//         speed: 400,
+//         spaceBetween: i,
+//         slidesPerView: z,
+//         navigation: {
+//             nextEl: '.swiper-button-next2',
+//             prevEl: '.swiper-button-prev2',
+//         },
+//     });
+//
+//     var swiper1 = new Swiper('.swiper1', {
+//         direction: 'horizontal',
+//         loop: true,
+//         initialSlide: 0,
+//         speed: 400,
+//         spaceBetween: i,
+//         slidesPerView: z,
+//         navigation: {
+//             nextEl: '.swiper-button-next1',
+//             prevEl: '.swiper-button-prev1',
+//         },
+//     });
+//
+// });
 //
 //     var mySwiper = new Swiper('.swiper-container', {
 //         // Optional parameters
