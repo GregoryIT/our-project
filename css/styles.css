@@ -400,6 +400,10 @@ body {
   margin-bottom: 50px;
   }
 
+/*.swiper-wrapper {*/
+  /*width: 95%;*/
+/*}*/
+
 .section-4-slider-item {
   display: flex;
   flex-direction: column;
@@ -455,11 +459,14 @@ body {
   color: #FFFFFF;
 }
 
+.section-3-swiper-buttons,
 .section-4-swiper-buttons {
   margin-bottom: 50px;
 }
-.section-4-swiper-buttons .swiper-button-next,
-.section-4-swiper-buttons .swiper-button-prev {
+.section-3-swiper-buttons .swiper-button-next1,
+.section-3-swiper-buttons .swiper-button-prev1,
+.section-4-swiper-buttons .swiper-button-next2,
+.section-4-swiper-buttons .swiper-button-prev2 {
   position: relative;
   display: inline-block;
   top: 0;
@@ -475,7 +482,8 @@ body {
   background-image: url("../img/services/arow-left.svg");
 }
 
-.section-4-swiper-buttons .swiper-button-next {
+.section-3-swiper-buttons .swiper-button-next1,
+.section-4-swiper-buttons .swiper-button-next2 {
   background-image: url("../img/services/arow-right.svg");
 }
 
