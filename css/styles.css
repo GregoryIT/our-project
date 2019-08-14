@@ -17,6 +17,11 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +114,7 @@ body {
 }
 .section-1 .section-1-content .section-1-content-left .rectangle {
   width: 432px;
-  height: 51px;
+  height: 91px;
   left: 149px;
   top: 330px;
   background: #C4C4C4;
@@ -119,6 +124,12 @@ body {
   .section-1 .section-1-content .section-1-content-left .rectangle {
     width: 349px;
     height: 91px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-1 .section-1-content .section-1-content-left .rectangle {
+    width: 260px;
+    height: 80px;
   }
 }
 .section-1 .section-1-content .section-1-content-left button {
@@ -156,6 +167,17 @@ body {
     height: 266px;
     text-align: center;
   }
+  .section-1 .section-1-content .section-1-content-right .card img {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-1 .section-1-content .section-1-content-right .card {
+    width: 300px;
+    height: 266px;
+    text-align: center;
+  }
+
   .section-1 .section-1-content .section-1-content-right .card img {
     margin: 0 auto;
   }
@@ -247,8 +269,19 @@ body {
   height: 620px;
   position: relative;
 }
+@media screen and (max-width: 430px) {
+  #section-3 .container .row .section-3-card {
+    width: 300px;
+    height: 600px;
+  }
+}
 #section-3 .container .row .section-3-card img[src="img/pl.svg"] {
   border-radius: 10px;
+}
+@media screen and (max-width: 430px) {
+  #section-3 .container .row .section-3-card img[src="img/pl.svg"] {
+    width: 300px;
+  }
 }
 #section-3 .container .row .section-3-card-contentBlock {
   background-color: #ffffff;
@@ -263,6 +296,11 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+}
+@media screen and (max-width: 420px) {
+  #section-3 .container .row .section-3-card-contentBlock {
+    width: 250px;
+  }
 }
 #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-title {
   position: relative;
@@ -338,6 +376,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 420px) {
+  #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
+    width: 200px;
+  }
 }
 #section-3 .container .row .column {
   justify-content: space-around;
@@ -571,6 +614,12 @@ body {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+}
+
+@media screen and (max-width: 420px) {
+  .section-5-form-group label {
+    font-size: 16px;
+  }
 }
 
 /* active state */
