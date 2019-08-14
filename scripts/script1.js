@@ -1,11 +1,23 @@
 $(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $(".top-bar").addClass("fixed");
+            $(".fake-top-bar").addClass("fake-top-bar-active");
+        } else {
+            $(".top-bar").removeClass("fixed");
+            $(".fake-top-bar").removeClass("fake-top-bar-active");
+        }
+    });
+});
+
+$(document).ready(function () {
     $(".top-bar").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({
             scrollTop: top
-        }, 700);
+        }, 1000);
     });
 });
 
