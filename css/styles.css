@@ -87,7 +87,7 @@ body {
   }
 }
 .section-1 {
-  padding: 50px 0;
+  padding: 50px 0 30px 0;
 }
 .section-1 .section-1-content .section-1-content-left {
   padding: 50px 0;
@@ -198,6 +198,7 @@ body {
   color: #377EF9;
 }
 .section-1 .section-1-content .section-1-content-right button {
+  margin-top: 30px;
   width: 200px;
   height: 50px;
   border: 2px solid #FB765F;
@@ -337,11 +338,9 @@ body {
 #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature {
   width: 100px;
   height: 30px;
-  text-align: center;
 }
 #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature img {
   width: 30px;
-  margin: 0 auto;
 }
 #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .up {
   font-family: Open Sans;
