@@ -15,6 +15,13 @@ a {
   text-decoration: none;
 }
 
+a,
+button,
+.swiper-button-prev1,
+.swiper-button-next1 {
+  outline: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
