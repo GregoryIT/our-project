@@ -1,6 +1,10 @@
 $(document).ready(function () {
+    var x = false;
+    if (window.matchMedia('(min-width: 1100px)').matches) {
+        x = true;
+    }
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
+        if ($(this).scrollTop() > 0 && x) {
             $(".top-bar").addClass("fixed");
             $(".fake-top-bar").addClass("fake-top-bar-active");
         } else {
