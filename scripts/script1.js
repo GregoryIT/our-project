@@ -2,26 +2,26 @@ $(document).ready(function () {
     $("#phone").mask("+ 375 (--) -- -- ---");
 });
 
-$('.form')
-    .validate({
-        rules: {
-            userName: {required: true},
-            userEmail: {
-                required: true,
-                email: true
-            }
-        },
-        messages: {
-            userName: 'Please specify your name',
-            userEmail: {
-                required: 'Please specify your name email',
-                email: 'Your email address must be in the format of name@domain.com'
-            }
+// $('.form')
+//     .validate({
+//         rules: {
+//             userName: {required: true},
+//             userEmail: {
+//                 required: true,
+//                 email: true
+//             }
+//         },
+//         messages: {
+//             userName: 'Please specify your name',
+//             userEmail: {
+//                 required: 'Please specify your name email',
+//                 email: 'Your email address must be in the format of name@domain.com'
+//             }
 
-        },
-        errorClass: 'errValidForm'
+//         },
+//         errorClass: 'errValidForm'
 
-    });
+//     });
 
 $(document).ready(function () {
     //initialize swiper when document ready
