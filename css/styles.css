@@ -1,10 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  /* box-sizing: border-box; */
+
 }
 
 li {
@@ -15,11 +18,11 @@ a {
     text-decoration: none;
 }
 
-a,
 button,
-.swiper-button-prev1,
-.swiper-button-next1 {
-    outline: none;
+
+swiper-button-prev1,
+swiper-button-next1 {
+  cursor: pointer;
 }
 
 .container {
