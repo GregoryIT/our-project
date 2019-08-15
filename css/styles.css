@@ -492,7 +492,7 @@ body {
 
 .swiper-wrapper {
   display: block;
-width: 350px;
+  width: 350px;
 }
 
 .section-4-slider-item {
@@ -832,4 +832,11 @@ footer span {
   line-height: 28px;
 
   color: #FFFFFF;
+}
 
+.swiper-wrapper-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
