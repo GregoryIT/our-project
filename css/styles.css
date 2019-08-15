@@ -517,6 +517,12 @@ body {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 400px) {
+  .section-4-slider-item {
+    width: 280px;
+  }
+}
+
 .section-4-slider-item a {
   font-family: Open Sans;
   font-style: normal;
