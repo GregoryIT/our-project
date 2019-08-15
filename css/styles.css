@@ -22,6 +22,10 @@ button,
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -828,27 +832,4 @@ footer span {
   line-height: 28px;
 
   color: #FFFFFF;
-}
 
-/*991px*/
-@media (max-width: 1199px) {}
-
-/*@media (max-width: 575px) {*/
-/*footer > div {*/
-/*display: flex;*/
-/*flex-direction: column;*/
-/*}*/
-/*}*/
-/*@media (max-width: 1199px) {*/
-/**/
-/*}*/
-/*max-width: 575px {*/
-/*max-width: 767px {*/
-/*max-width: 991px {*/
-/*max-width: 1199px {*/
-.swiper-wrapper-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-}

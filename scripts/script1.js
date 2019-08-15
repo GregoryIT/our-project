@@ -32,6 +32,7 @@ $(document).ready(function () {
 
 
 
+
 $(document).ready(function () {
     let firstCountSlids = 3;
     let secCountSlids = 3;
@@ -95,3 +96,4 @@ $(document).ready(function () {
         },
     });
 });
+
