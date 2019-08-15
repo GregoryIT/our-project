@@ -130,6 +130,12 @@ body {
   padding: 50px 0 30px 0;
 }
 
+@media screen and (max-width: 421px) {
+  .section-1 {
+    padding: 0;
+  }
+}
+
 .section-1 .section-1-content .section-1-content-left {
   padding: 50px 0;
   margin: 0 auto;
@@ -361,7 +367,6 @@ body {
   height: 289px;
   padding: 20px;
   box-sizing: border-box;
-  margin-left: 25px;
   bottom: 0;
   opacity: 0.9;
   background: #FFFFFF;
@@ -556,6 +561,14 @@ body {
 .section-3-swiper-buttons,
 .section-4-swiper-buttons {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 421px) {
+  .section-2-swiper-buttons,
+  .section-3-swiper-buttons,
+  .section-4-swiper-buttons {
+    margin-bottom: 10px;
+  }
 }
 
 .section-2-swiper-buttons .swiper-button-next,
