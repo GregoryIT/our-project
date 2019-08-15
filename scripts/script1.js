@@ -25,12 +25,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $("#phone").mask("+ 375 (--) -- -- ---");
-});
-
-
-
 
 $(document).ready(function () {
     let firstCountSlids = 3;
@@ -93,5 +87,47 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next2',
             prevEl: '.swiper-button-prev2',
         },
+    });
+});
+
+$(document).ready(function () {
+    $("input[name=user-phone]").mask("+375 (99) 99 99 999");
+});
+
+$('#new-form')
+    .validate({
+        rules: {
+            userName: {required: true},
+            userEmail: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            userName: 'Please specify your name',
+            userEmail: {
+                required: 'Please specify your name email',
+                email: 'Your email address must be in the format of name@domain.com'
+            }
+        },
+        errorClass: 'errValidForm'
+    });
+
+$(document).mouseup(function (e) {
+    let isActive = document.querySelector('#collapse-navbar').classList.contains('active');
+    var container = $("#collapse-navbar");
+    if ((container.has(e.target).length === 0) && isActive) {
+        document.querySelector('#collapse-navbar').classList.toggle('active');
+    }
+});
+
+const showMenu = () => {
+    document.querySelector('#collapse-navbar').classList.toggle('active');
+};
+
+document.querySelector('.navbar-menu').addEventListener('click', (e) => showMenu());
+document.querySelectorAll('#collapse-navbar a').forEach(item => {
+    item.addEventListener('click', (e) => {
+        document.querySelector('#collapse-navbar').classList.remove('active');
     });
 });

@@ -24,11 +24,19 @@
             <li><a href="#section-2">О нас</a></li>
             <li><a href="#section-4">Услуги</a></li>
             <li>
-                <button> • • • МЕНЮ</button>
+                <button class="navbar-menu"> • • • МЕНЮ</button>
             </li>
         </ul>
 
     </div>
+</div>
+<div  id="collapse-navbar">
+    <ul class="navbar">
+        <li><a href="#section-3">Визы</a></li>
+        <li><a href="#footer">Контакты</a></li>
+        <li><a href="#section-2">О нас</a></li>
+        <li><a href="#section-4">Услуги</a></li>
+    </ul>
 </div>
 <section class="section-1">
     <div class="container">
@@ -403,28 +411,29 @@
                 <img class="section-5-images-2" src="img/form/calling.svg" alt="calling">
             </div>
         </div>
-        <form action="#" name="new-form" method="post" class="section-5-form">
+        <form action="#" id="new-form" name="new-form" method="post" class="section-5-form" >
             <div class="section-5-form-inputs">
                 <div class="section-5-inner">
                     <div class="section-5-form-group">
                         <input type="text" id="userName" name="userName" required>
                         <span class="section-5-form-group-bar"></span>
-                        <label>Как вас зовут?</label>
+                        <label class="section-5-inner-label">Как вас зовут?</label>
                     </div>
+
                     <div class="section-5-form-group">
                         <input type="email" id="userEmail" name="userEmail" required>
                         <span class="section-5-form-group-bar"></span>
-                        <label>Email</label>
+                        <label class="section-5-inner-label">Email</label>
                     </div>
                 </div>
                 <div class="section-5-inner">
                     <div class="section-5-form-group">
-                        <input type="tel" id="phone" name="user-phone" placeholder="+ 375 (--) — — —-">
+                        <input type="tel" id="phone" name="user-phone" placeholder="+ 375 (--) -- -- ---">
                     </div>
                     <div class="section-5-form-group">
-                        <input type="text" id="callTime" name="call-time" required>
+                        <input type="text" id="callTime" name="callTime" required>
                         <span class="section-5-form-group-bar"></span>
-                        <label>Удобное время для связи?</label>
+                        <label class="section-5-inner-label">Удобное время для связи?</label>
                     </div>
                 </div>
             </div>
@@ -465,15 +474,13 @@
         </div>
     </div>
 </footer>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.mi.."></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.."></script> -->
 
 <script type="text/javascript" src="scripts/jQuery/jQuery.js"></script>
 <script type="text/javascript" src="scripts/jQuery/jquery.maskedinput.min.js"></script>
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jq.."></script> -->
-<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.."></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="scripts/script1.js"></script>
+
 </body>
 </html>
 
