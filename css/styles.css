@@ -22,10 +22,6 @@ button,
   outline: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -492,7 +488,7 @@ body {
 
 .swiper-wrapper {
   display: block;
-  width: 350px;
+width: 350px;
 }
 
 .section-4-slider-item {
@@ -834,6 +830,22 @@ footer span {
   color: #FFFFFF;
 }
 
+/*991px*/
+@media (max-width: 1199px) {}
+
+/*@media (max-width: 575px) {*/
+/*footer > div {*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*}*/
+/*}*/
+/*@media (max-width: 1199px) {*/
+/**/
+/*}*/
+/*max-width: 575px {*/
+/*max-width: 767px {*/
+/*max-width: 991px {*/
+/*max-width: 1199px {*/
 .swiper-wrapper-inner {
   display: flex;
   flex-direction: row;
