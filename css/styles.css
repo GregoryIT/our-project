@@ -486,10 +486,10 @@ body {
   margin-bottom: 50px;
 }
 
-.swiper-wrapper {
-  display: block;
-width: 350px;
-}
+/*.swiper-wrapper {*/
+  /*display: block;*/
+  /*width: 350px;*/
+/*}*/
 
 .section-4-slider-item {
   display: flex;
@@ -551,11 +551,14 @@ width: 350px;
   color: #FFFFFF;
 }
 
+.section-2-swiper-buttons,
 .section-3-swiper-buttons,
 .section-4-swiper-buttons {
   margin-bottom: 50px;
 }
 
+.section-2-swiper-buttons .swiper-button-next,
+.section-2-swiper-buttons .swiper-button-prev,
 .section-3-swiper-buttons .swiper-button-next1,
 .section-3-swiper-buttons .swiper-button-prev1,
 .section-4-swiper-buttons .swiper-button-next2,
@@ -569,6 +572,7 @@ width: 350px;
   background-image: url("../img/services/arow-left.svg");
 }
 
+.section-2-swiper-buttons .swiper-button-next,
 .section-3-swiper-buttons .swiper-button-next1,
 .section-4-swiper-buttons .swiper-button-next2 {
   background-image: url("../img/services/arow-right.svg");
@@ -850,5 +854,5 @@ footer span {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
+
