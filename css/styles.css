@@ -856,3 +856,47 @@ footer span {
   justify-content: center;
 }
 
+
+#collapse-navbar {
+  position: fixed;
+  width: 250px;
+  /*height: 100px;*/
+  background: #57626f;
+  border-right: 4px solid #e0e5ea;
+  left: 260px;
+  /*top: 10px;*/
+  border-radius: 10px;
+  -moz-transition: all 600ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+#collapse-navbar.active {
+  right: 0;
+  z-index: 200;
+}
+
+#collapse-navbar ul li {
+  width: 90%;
+  margin-left: 10%;
+  padding: 15px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #25233A;
+}
+
+#collapse-navbar ul li a {
+  color: #C4C4C4;
+}
+
+.collapse-navbar ul li a:hover {
+  color: #FFFFFF;
+}
+
+#userEmail-error,
+#callTime-error,
+#userName-error {
+  margin-top: 25px;
+  color: #dc3545;
+}
