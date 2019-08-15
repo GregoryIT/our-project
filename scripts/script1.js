@@ -32,7 +32,6 @@ $(document).ready(function () {
 
 
 
-
 $(document).ready(function () {
     let firstCountSlids = 3;
     let secCountSlids = 3;
@@ -47,7 +46,7 @@ $(document).ready(function () {
          thirtCountSlids = 2;
          firstSpace = 60;
          secSpace = 60;
-         thirtSpace = 60;
+         thirtSpace = 0;
     }
     if (window.matchMedia('(max-width: 720px)').matches) {
         firstCountSlids = 1;
@@ -62,8 +61,8 @@ $(document).ready(function () {
         loop: true,
         initialSlide: 0,
         speed: 400,
-        spaceBetween: thirtSpace,
-        slidesPerView: thirtCountSlids,
+        spaceBetween: firstSpace,
+        slidesPerView: firstCountSlids,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -96,4 +95,3 @@ $(document).ready(function () {
         },
     });
 });
-
