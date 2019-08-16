@@ -1,6 +1,7 @@
 var flag = true;
 var xFlag = false;
 
+
 function addSwiper() {
     var firstCountSlids = 3;
     var secCountSlids = 3;
@@ -8,7 +9,6 @@ function addSwiper() {
     var firstSpace = 60;
     var secSpace = 60;
     var thirtSpace = 60;
-
     if (window.matchMedia('(max-width: 1099px)').matches) {
         firstCountSlids = 2;
         secCountSlids = 2;
@@ -18,6 +18,14 @@ function addSwiper() {
         thirtSpace = 0;
     }
     if (window.matchMedia('(max-width: 720px)').matches) {
+        firstCountSlids = 2;
+        secCountSlids = 1;
+        thirtCountSlids = 1;
+        firstSpace = 60;
+        secSpace = 60;
+        thirtSpace = 60;
+    }
+    if (window.matchMedia('(max-width: 500px)').matches) {
         firstCountSlids = 1;
         secCountSlids = 1;
         thirtCountSlids = 1;
@@ -33,8 +41,8 @@ function addSwiper() {
         spaceBetween: firstSpace,
         slidesPerView: firstCountSlids,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next4',
+            prevEl: '.swiper-button-prev4',
         },
     });
 
