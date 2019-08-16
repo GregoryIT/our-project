@@ -10,6 +10,14 @@
 
 }
 
+button:hover {
+    filter: brightness(0.8);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 img {
     max-width: 100%;
 }
@@ -512,6 +520,10 @@ body {
     color: #333333;
 }
 
+.section-2-slider-item p {
+    height: 40px;
+}
+
 #section-3 .container .row .section-3-card {
     margin: 0 auto;
     margin-bottom: 50px;
@@ -629,11 +641,13 @@ body {
     color: #25233A;
 }
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    #section-3 .container .row .section-3-card-contentBlock button {
-        margin-top: 45px;
-    }
+.section-3-card-contentBlock button a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
 #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
@@ -712,10 +726,9 @@ body {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    color: #3E3E54;
-
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
 .section-4-slider-item img {
