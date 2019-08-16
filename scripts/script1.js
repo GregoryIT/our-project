@@ -39,7 +39,7 @@ function addSwiper() {
         loop: true,
         initialSlide: 0,
         speed: 400,
-        spaceBetween: 10,
+        spaceBetween: 60,
         slidesPerView: 1,
         navigation: {
             nextEl: '.swiper-button-next5',
