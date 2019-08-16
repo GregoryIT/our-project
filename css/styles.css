@@ -10,6 +10,10 @@
 
 }
 
+img {
+	max-width: 100%;
+}
+
 li {
     list-style-type: none;
 }
@@ -345,12 +349,20 @@ body {
     position: relative;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
     #section-3 .container .row .section-3-card {
         width: 300px;
         height: 600px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    #section-3 .container .row .section-3-card {
+        margin-top: 0;
+    }
+}
+
+
 
 #section-3 .container .row .section-3-card img[src="img/pl.svg"] {
     border-radius: 10px;
@@ -907,4 +919,3 @@ footer span {
     margin-top: 25px;
     color: #dc3545;
 }
-
