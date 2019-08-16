@@ -33,6 +33,20 @@ function addSwiper() {
         secSpace = 60;
         thirtSpace = 60;
     }
+
+    var swiper5 = new Swiper('.swiper5', {
+        direction: 'horizontal',
+        loop: true,
+        initialSlide: 0,
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next5',
+            prevEl: '.swiper-button-prev5',
+        },
+    });
+
     var swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
