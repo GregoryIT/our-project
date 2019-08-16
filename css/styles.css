@@ -1035,7 +1035,7 @@ footer a:hover[href="index.html"] {
     text-decoration: none;
 }
 
-footer span {
+footer .tel {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
