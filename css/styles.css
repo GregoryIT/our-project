@@ -153,12 +153,17 @@ body {
         padding: 0;
     }
 }
-
+.section-1-content {
+    width: 100%;
+    display: flex;
+}
 .section-1 .section-1-content .section-1-content-left {
+    position: relative;
     padding: 50px 0;
     margin: 0 auto;
     padding-top: 50px;
     height: 420px;
+    width: 50%;
 }
 
 .section-1 .section-1-content .section-1-content-left img[src="img/dots.svg"] {
@@ -695,6 +700,9 @@ body {
     margin-bottom: 50px;
 }
 
+.swiper-container.first-swiper-container {
+    width: 90%;
+}
 /* .swiper-wrapper {
     display: block;
     width: 350px;
