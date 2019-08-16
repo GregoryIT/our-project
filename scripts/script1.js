@@ -42,7 +42,7 @@ $(document).ready(function () {
          secSpace = 60;
          thirtSpace = 0;
     }
-    if (window.matchMedia('(max-width: 720px)').matches) {
+    if (window.matchMedia('(max-width: 800px)').matches) {
         firstCountSlids = 2;
         secCountSlids = 1;
         thirtCountSlids = 1;
