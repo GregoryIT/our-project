@@ -27,9 +27,9 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    let firstCountSlids = 3;
+    let firstCountSlids = 5;
     let secCountSlids = 3;
-    let thirtCountSlids = 3;
+    let thirtCountSlids = 3;    
     let firstSpace = 60;
     let secSpace = 60;
     let thirtSpace = 60;
@@ -43,6 +43,14 @@ $(document).ready(function () {
          thirtSpace = 0;
     }
     if (window.matchMedia('(max-width: 720px)').matches) {
+        firstCountSlids = 2;
+        secCountSlids = 1;
+        thirtCountSlids = 1;
+        firstSpace = 60;
+        secSpace = 60;
+        thirtSpace = 60;
+    }
+    if (window.matchMedia('(max-width: 500px)').matches) {
         firstCountSlids = 1;
         secCountSlids = 1;
         thirtCountSlids = 1;
@@ -58,8 +66,8 @@ $(document).ready(function () {
         spaceBetween: firstSpace,
         slidesPerView: firstCountSlids,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next4',
+            prevEl: '.swiper-button-prev4',
         },
     });
 
