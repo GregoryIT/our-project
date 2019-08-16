@@ -1066,20 +1066,18 @@ footer .tel {
 #collapse-navbar {
     position: fixed;
     width: 250px;
-    /*height: 100px;*/
-    background: #57626f;
-    border-right: 4px solid #e0e5ea;
-    right: -260px;
-    /*top: 10px;*/
-    border-radius: 10px;
+    background: white;
+    /*border-right: 4px solid #e0e5ea;*/
+    right: -360px;
+    /*border-radius: 10px;*/
     -moz-transition: all 600ms;
     -webkit-transition: all 600ms;
     transition: all 600ms;
 }
 
 #collapse-navbar.active {
-    right: 0;
-    z-index: 200;
+    right: 20px;
+    z-index: 2000;
 }
 
 #collapse-navbar ul li {
@@ -1093,11 +1091,15 @@ footer .tel {
 }
 
 #collapse-navbar ul li a {
-    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #25233A;
 }
 
 .collapse-navbar ul li a:hover {
-    color: #FFFFFF;
+    color: #dc3545;
 }
 
 #userEmail-error,
@@ -1106,3 +1108,45 @@ footer .tel {
     margin-top: 25px;
     color: #dc3545;
 }
+
+.accordion {
+    list-style-type: none;
+}
+
+.accordion-header-container {
+    border-bottom: 1px solid gray;
+}
+
+.accordion-header {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.accordion-body {
+    display: none;
+    border-top: 1px solid gray;
+    align-items: center;
+}
+
+.accordion-body > div {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 22px;
+    align-items: center;
+    color: #25233A;
+}
+
+/*.accordion-body > div > a {*/
+    /*font-style: normal;*/
+    /*font-weight: 500;*/
+    /*font-size: 8px;*/
+    /*line-height: 22px;*/
+    /*color: #25233A;*/
+/*}*/
