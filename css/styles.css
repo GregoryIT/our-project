@@ -121,7 +121,7 @@ body {
 .top-bar .container .navbar li button {
     width: 135px;
     height: 40px;
-    background: rgba(55, 126, 249, 0.1);
+    background-color: white;
     border-radius: 10px;
     font-style: normal;
     font-weight: 600;
@@ -129,7 +129,11 @@ body {
     line-height: 22px;
     color: #25233A;
 }
-
+@media screen and (max-width: 710px) {
+    .top-bar .container .navbar li button {
+        background: rgba(55, 126, 249, 0.1);
+    }
+}
 .top-bar .container .row {
     align-items: center;
 }
@@ -888,9 +892,8 @@ body {
 }
 
 .section-5-form-group {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     width: 90%;
+    height: 65px;
     position: relative;
     margin-bottom: 30px;
 }
