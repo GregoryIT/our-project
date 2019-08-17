@@ -33,7 +33,6 @@ var xFlag = false;
 //     //      flag = true;
 //     //  }
 // }
-
 /**
  * major Function. it starts when document is ready
  */
