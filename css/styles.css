@@ -1130,15 +1130,15 @@ footer .tel {
     color: #dc3545;
 }
 
-.accordion {
+.collapse {
     list-style-type: none;
 }
 
-.accordion-header-container {
+.collapse-header-container {
     border-bottom: 1px solid gray;
 }
 
-.accordion-header {
+.collapse-header {
     position: absolute;
     display: inline-block;
     width: 20px;
@@ -1148,13 +1148,13 @@ footer .tel {
     align-items: center;
 }
 
-.accordion-body {
+.collapse-body {
     display: none;
     border-top: 1px solid gray;
     align-items: center;
 }
 
-.accordion-body > div {
+.collapse-body > div {
     margin-top: 15px;
     font-style: normal;
     font-weight: 500;
@@ -1164,7 +1164,7 @@ footer .tel {
     color: #25233A;
 }
 
-/*.accordion-body > div > a {*/
+/*.collapse-body > div > a {*/
 /*font-style: normal;*/
 /*font-weight: 500;*/
 /*font-size: 8px;*/
