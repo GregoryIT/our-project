@@ -1,3 +1,40 @@
+
+var flag = true;
+var xFlag = false;
+
+// function menuControl() {
+//     // document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
+//     //     item.addEventListener('click', function (e) {
+//     //         document.querySelector('#collapse-navbar').classList.remove('active');
+//     //     });
+//     // });
+//
+//     // $(document).mouseup(function (e) {
+//     //     // debugger;
+//     //     if (e.target.classList.contains('navbar-menu') )  return;
+//     //     // var isActive = document.querySelector('#collapse-navbar').classList.contains('active');
+//     //     var container = $("#collapse-navbar");
+//     //     if ((container.has(e.target).length === 0) ) {
+//     //         document.querySelector('#collapse-navbar').classList.remove('active');
+//     //     }
+//     //     flag = false;
+//     // });
+// }
+//
+// function showMenu() {
+//     var collapseNavbar = document.querySelector('#collapse-navbar');
+//     var isActive = collapseNavbar.classList.toggle('active');
+//
+//     // console.log(collapseNavbar.classList);
+//     //  if (collapseNavbar.classList.contains('active')) {
+//     //      collapseNavbar.classList.remove('active');
+//     //      flag = false;
+//     // } else if (flag === false) {
+//     //      collapseNavbar.classList.add('active');
+//     //      flag = true;
+//     //  }
+// }
+
 /**
  * major Function. it starts when document is ready
  */
