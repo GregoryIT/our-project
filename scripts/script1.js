@@ -92,13 +92,25 @@ $(document).ready(function majorFunc() {
             firstCountSlids = 2;
             secCountSlids = 2;
             thirtCountSlids = 2;
+            firstSpace = 60;
+            secSpace = 60;
             thirtSpace = 0;
         }
         if (window.matchMedia('(max-width: 720px)').matches) {
             firstCountSlids = 2;
+            secCountSlids = 1;
+            thirtCountSlids = 1;
+            firstSpace = 60;
+            secSpace = 60;
+            thirtSpace = 60;
         }
         if (window.matchMedia('(max-width: 500px)').matches) {
             firstCountSlids = 1;
+            secCountSlids = 1;
+            thirtCountSlids = 1;
+            firstSpace = 60;
+            secSpace = 60;
+            thirtSpace = 60;
         }
 
         var swiper5 = new Swiper('.swiper5', {
