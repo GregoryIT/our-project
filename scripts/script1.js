@@ -1,139 +1,60 @@
 var flag = true;
 var xFlag = false;
 
+// function menuControl() {
+//     // document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
+//     //     item.addEventListener('click', function (e) {
+//     //         document.querySelector('#collapse-navbar').classList.remove('active');
+//     //     });
+//     // });
+//
+//     // $(document).mouseup(function (e) {
+//     //     // debugger;
+//     //     if (e.target.classList.contains('navbar-menu') )  return;
+//     //     // var isActive = document.querySelector('#collapse-navbar').classList.contains('active');
+//     //     var container = $("#collapse-navbar");
+//     //     if ((container.has(e.target).length === 0) ) {
+//     //         document.querySelector('#collapse-navbar').classList.remove('active');
+//     //     }
+//     //     flag = false;
+//     // });
+// }
+//
+// function showMenu() {
+//     var collapseNavbar = document.querySelector('#collapse-navbar');
+//     var isActive = collapseNavbar.classList.toggle('active');
+//
+//     // console.log(collapseNavbar.classList);
+//     //  if (collapseNavbar.classList.contains('active')) {
+//     //      collapseNavbar.classList.remove('active');
+//     //      flag = false;
+//     // } else if (flag === false) {
+//     //      collapseNavbar.classList.add('active');
+//     //      flag = true;
+//     //  }
+// }
 
-function addSwiper() {
-    var firstCountSlids = 3;
-    var secCountSlids = 3;
-    var thirtCountSlids = 3;
-    var firstSpace = 60;
-    var secSpace = 60;
-    var thirtSpace = 60;
-    if (window.matchMedia('(max-width: 1099px)').matches) {
-        firstCountSlids = 2;
-        secCountSlids = 2;
-        thirtCountSlids = 2;
-        firstSpace = 60;
-        secSpace = 60;
-        thirtSpace = 0;
-    }
-    if (window.matchMedia('(max-width: 800px)').matches) {
-        firstCountSlids = 2;
-        secCountSlids = 1;
-        thirtCountSlids = 1;
-        firstSpace = 60;
-        secSpace = 60;
-        thirtSpace = 60;
-    }
-    if (window.matchMedia('(max-width: 500px)').matches) {
-        firstCountSlids = 1;
-        secCountSlids = 1;
-        thirtCountSlids = 1;
-        firstSpace = 60;
-        secSpace = 60;
-        thirtSpace = 60;
-    }
+/**
+ * major Function. it starts when document is ready
+ */
+$(document).ready(function majorFunc() {
 
-    var swiper5 = new Swiper('.swiper5', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: 60,
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-button-next5',
-            prevEl: '.swiper-button-prev5',
-        },
+    /**
+     * when screen`s min-width is 1100px add menu to top screen
+     */
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0 && window.matchMedia('(min-width: 1100px)').matches) {
+            $(".top-bar").addClass("fixed");
+            $(".fake-top-bar").addClass("fake-top-bar-active");
+        } else {
+            $(".top-bar").removeClass("fixed");
+            $(".fake-top-bar").removeClass("fake-top-bar-active");
+        }
     });
 
-    var swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: firstSpace,
-        slidesPerView: firstCountSlids,
-        navigation: {
-            nextEl: '.swiper-button-next4',
-            prevEl: '.swiper-button-prev4',
-        },
-    });
-
-    var swiper1 = new Swiper('.swiper1', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: secSpace,
-        slidesPerView: secCountSlids,
-        navigation: {
-            nextEl: '.swiper-button-next1',
-            prevEl: '.swiper-button-prev1',
-        },
-    });
-
-    var swiper2 = new Swiper('.swiper2', {
-        direction: 'horizontal',
-        loop: true,
-        initialSlide: 0,
-        speed: 400,
-        spaceBetween: thirtSpace,
-        slidesPerView: thirtCountSlids,
-        navigation: {
-            nextEl: '.swiper-button-next2',
-            prevEl: '.swiper-button-prev2',
-        },
-    });
-}
-
-function menuControl() {
-    // document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
-    //     item.addEventListener('click', function (e) {
-    //         document.querySelector('#collapse-navbar').classList.remove('active');
-    //     });
-    // });
-
-    // $(document).mouseup(function (e) {
-    //     // debugger;
-    //     if (e.target.classList.contains('navbar-menu') )  return;
-    //     // var isActive = document.querySelector('#collapse-navbar').classList.contains('active');
-    //     var container = $("#collapse-navbar");
-    //     if ((container.has(e.target).length === 0) ) {
-    //         document.querySelector('#collapse-navbar').classList.remove('active');
-    //     }
-    //     flag = false;
-    // });
-}
-
-function showMenu() {
-    var collapseNavbar = document.querySelector('#collapse-navbar');
-    var isActive = collapseNavbar.classList.toggle('active');
-
-    // console.log(collapseNavbar.classList);
-    //  if (collapseNavbar.classList.contains('active')) {
-    //      collapseNavbar.classList.remove('active');
-    //      flag = false;
-    // } else if (flag === false) {
-    //      collapseNavbar.classList.add('active');
-    //      flag = true;
-    //  }
-}
-
-if (window.matchMedia('(min-width: 1100px)').matches) {
-    xFlag = true;
-}
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 0 && xFlag) {
-        $(".top-bar").addClass("fixed");
-        $(".fake-top-bar").addClass("fake-top-bar-active");
-    } else {
-        $(".top-bar").removeClass("fixed");
-        $(".fake-top-bar").removeClass("fake-top-bar-active");
-    }
-});
-
-function majorFunc() {
+    /**
+     * add an animated scroll after click on the menu link
+     */
     $(".top-bar").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
@@ -143,9 +64,101 @@ function majorFunc() {
         }, 1000);
     });
 
-    addSwiper();
+    /**
+     * add sliders behavior
+     */
+    function slidersBehavior() {
+        let firstCountSlids = 3;
+        let secCountSlids = 3;
+        let thirtCountSlids = 3;
+        let firstSpace = 60;
+        let secSpace = 60;
+        let thirtSpace = 60;
 
-    $("input[name=user-phone]").mask("+375 (99) 99 99 999");
+        if (window.matchMedia('(max-width: 1099px)').matches) {
+            firstCountSlids = 2;
+            secCountSlids = 2;
+            thirtCountSlids = 2;
+            firstSpace = 60;
+            secSpace = 60;
+            thirtSpace = 0;
+        }
+        if (window.matchMedia('(max-width: 720px)').matches) {
+            firstCountSlids = 2;
+            secCountSlids = 1;
+            thirtCountSlids = 1;
+            firstSpace = 60;
+            secSpace = 60;
+            thirtSpace = 60;
+        }
+        if (window.matchMedia('(max-width: 500px)').matches) {
+            firstCountSlids = 1;
+            secCountSlids = 1;
+            thirtCountSlids = 1;
+            firstSpace = 60;
+            secSpace = 60;
+            thirtSpace = 60;
+        }
+
+        var swiper5 = new Swiper('.swiper5', {
+            direction: 'horizontal',
+            loop: true,
+            initialSlide: 0,
+            speed: 400,
+            spaceBetween: 60,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next5',
+                prevEl: '.swiper-button-prev5',
+            },
+        });
+
+
+        var swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            initialSlide: 0,
+            speed: 400,
+            spaceBetween: firstSpace,
+            slidesPerView: firstCountSlids,
+            navigation: {
+                nextEl: '.swiper-button-next4',
+                prevEl: '.swiper-button-prev4',
+            },
+        });
+
+        var swiper1 = new Swiper('.swiper1', {
+            direction: 'horizontal',
+            loop: true,
+            initialSlide: 0,
+            speed: 400,
+            spaceBetween: secSpace,
+            slidesPerView: secCountSlids,
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+        });
+
+        var swiper2 = new Swiper('.swiper2', {
+            direction: 'horizontal',
+            loop: true,
+            initialSlide: 0,
+            speed: 400,
+            spaceBetween: thirtSpace,
+            slidesPerView: thirtCountSlids,
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+        });
+    }
+
+    slidersBehavior();
+
+    /**
+     * this runs the rules for validating forms
+     */
     $('#new-form')
         .validate({
             rules: {
@@ -165,59 +178,76 @@ function majorFunc() {
             errorClass: 'errValidForm'
         });
 
-    if (window.matchMedia('(max-width: 710px)').matches) {
-        document.querySelector('.navbar-menu').addEventListener('click', function (e)  {
-            showMenu();
+    /**
+     * this runs the rules for validating input-phone
+     */
+    $("input[name=user-phone]").mask("+375 (99) 99 99 999");
+
+    /**
+     * hide the menu when a click occurs outside the menu
+     */
+    $(document).mouseup(function (e) {
+        let isActive = document.querySelector('#collapse-navbar').classList.contains('active');
+        var container = $("#collapse-navbar");
+        if ((container.has(e.target).length === 0) && isActive) {
+            document.querySelector('#collapse-navbar').classList.toggle('active');
+        }
+    });
+
+    /**
+     * add behavior for the collapse-menu
+     */
+    const behaviorMenu = () => {
+        if (window.matchMedia('(max-width: 710px)').matches) {
+            document.querySelector('.navbar-menu').addEventListener('click', function (e) {
+                document.querySelector('#collapse-navbar').classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('#collapse-navbar a').forEach(item => {
+            item.addEventListener('click', (e) => {
+                document.querySelector('#collapse-navbar').classList.remove('active');
+            });
         });
-    }
-}
+    };
 
-$(document).ready(majorFunc);
+    behaviorMenu();
 
-$( window ).resize(function() {
-    majorFunc();
-});
-//
-// $("#collapse-navbar dd").hide().prev().click(function() {
-//     $(this).parents("#collapse-navbar").find("dd").not(this).slideUp().prev().removeClass("active-collapse");
-//     $(this).next().not(":visible").slideDown().prev().addClass("active-collapse");
-// });
-//
+    /**
+     * add behavior for the collapse
+     */
+    var collapse = function () {
+        var data = $(".collapse").attr("data-collapse");
 
-var accordion = function () {
-    var data = $(".accordion").attr("data-accordion");
-
-    $(".accordion-header").on("click", function() {
-        if (data === "close") {
-            $(".accordion-body").slideUp();
-            if ($(this).hasClass("activeAccord")) {
-                $(this).toggleClass("activeAccord");
+        $(".collapse-header").on("click", function () {
+            if (data === "close") {
+                $(".collapse-body").slideUp();
+                if ($(this).hasClass("activeAccord")) {
+                    $(this).toggleClass("activeAccord");
+                } else {
+                    $(".collapse-header").removeClass("activeAccord");
+                    $(this).toggleClass("activeAccord");
+                }
             } else {
-                $(".accordion-header").removeClass("activeAccord");
                 $(this).toggleClass("activeAccord");
             }
-        } else {
-            $(this).toggleClass("activeAccord");
-        }
-        $(this).parent().next(".accordion-body").not(":animated").slideToggle();
-    })
-}
-accordion();
+            $(this).parent().next(".collapse-body").not(":animated").slideToggle();
+        })
+    }
+    collapse();
 
-document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
-    item.addEventListener('click', function (e) {
-        document.querySelector('#collapse-navbar').classList.remove('active');
+    document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            document.querySelector('#collapse-navbar').classList.remove('active');
+        });
+    });
+
+    /**
+     * TO-DO - DESTROY OLD SLIDERS!
+     */
+    $(window).resize(function () {
+        // majorFunc();
     });
 });
 
 
-$(document).mouseup(function (e) {
-    // debugger;
-    if (e.target.classList.contains('navbar-menu') )  return;
-    // var isActive = document.querySelector('#collapse-navbar').classList.contains('active');
-    var container = $("#collapse-navbar");
-    if ((container.has(e.target).length === 0) ) {
-        document.querySelector('#collapse-navbar').classList.remove('active');
-    }
-    flag = false;
-});
+
