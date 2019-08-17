@@ -29,6 +29,18 @@ $(document).ready(function majorFunc() {
     });
 
     /**
+     * add an animated scroll after click on the collapse-menu link
+     */
+    $(".collapse").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+    /**
      * add sliders behavior
      */
     function slidersBehavior() {
