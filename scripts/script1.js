@@ -1,39 +1,3 @@
-var flag = true;
-var xFlag = false;
-
-// function menuControl() {
-//     // document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
-//     //     item.addEventListener('click', function (e) {
-//     //         document.querySelector('#collapse-navbar').classList.remove('active');
-//     //     });
-//     // });
-//
-//     // $(document).mouseup(function (e) {
-//     //     // debugger;
-//     //     if (e.target.classList.contains('navbar-menu') )  return;
-//     //     // var isActive = document.querySelector('#collapse-navbar').classList.contains('active');
-//     //     var container = $("#collapse-navbar");
-//     //     if ((container.has(e.target).length === 0) ) {
-//     //         document.querySelector('#collapse-navbar').classList.remove('active');
-//     //     }
-//     //     flag = false;
-//     // });
-// }
-//
-// function showMenu() {
-//     var collapseNavbar = document.querySelector('#collapse-navbar');
-//     var isActive = collapseNavbar.classList.toggle('active');
-//
-//     // console.log(collapseNavbar.classList);
-//     //  if (collapseNavbar.classList.contains('active')) {
-//     //      collapseNavbar.classList.remove('active');
-//     //      flag = false;
-//     // } else if (flag === false) {
-//     //      collapseNavbar.classList.add('active');
-//     //      flag = true;
-//     //  }
-// }
-
 /**
  * major Function. it starts when document is ready
  */
@@ -65,6 +29,18 @@ $(document).ready(function majorFunc() {
     });
 
     /**
+     * add an animated scroll after click on the collapse-menu link
+     */
+    $(".collapse").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+    /**
      * add sliders behavior
      */
     function slidersBehavior() {
@@ -79,25 +55,13 @@ $(document).ready(function majorFunc() {
             firstCountSlids = 2;
             secCountSlids = 2;
             thirtCountSlids = 2;
-            firstSpace = 60;
-            secSpace = 60;
             thirtSpace = 0;
         }
         if (window.matchMedia('(max-width: 720px)').matches) {
             firstCountSlids = 2;
-            secCountSlids = 1;
-            thirtCountSlids = 1;
-            firstSpace = 60;
-            secSpace = 60;
-            thirtSpace = 60;
         }
         if (window.matchMedia('(max-width: 500px)').matches) {
             firstCountSlids = 1;
-            secCountSlids = 1;
-            thirtCountSlids = 1;
-            firstSpace = 60;
-            secSpace = 60;
-            thirtSpace = 60;
         }
 
         var swiper5 = new Swiper('.swiper5', {
@@ -155,6 +119,24 @@ $(document).ready(function majorFunc() {
     }
 
     slidersBehavior();
+    /**
+     * TO-DO - DESTROY OLD SLIDERS!
+     */
+    $(window).resize(function () {
+        // swiper5.destroy();
+        // swiper.destroy();
+        // swiper1.destroy();
+        // swiper2.destroy();
+        // swiper5 = undefined;
+        // swiper = undefined;
+        // swiper1 = undefined;
+        // swiper2 = undefined;
+        // jQuery('.swiper-wrapper').removeAttr('style');
+        // jQuery('.swiper-slide').removeAttr('style');
+        // swiper.detachEvents();
+        // swiper.reInit() // or mySwiper.resizeFix()
+        // slidersBehavior();
+    });
 
     /**
      * this runs the rules for validating forms
@@ -241,12 +223,6 @@ $(document).ready(function majorFunc() {
         });
     });
 
-    /**
-     * TO-DO - DESTROY OLD SLIDERS!
-     */
-    $(window).resize(function () {
-        // majorFunc();
-    });
 });
 
 
