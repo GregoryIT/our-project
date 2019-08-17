@@ -1,3 +1,4 @@
+
 var flag = true;
 var xFlag = false;
 
@@ -33,6 +34,7 @@ var xFlag = false;
 //     //      flag = true;
 //     //  }
 // }
+
 /**
  * major Function. it starts when document is ready
  */
@@ -64,6 +66,18 @@ $(document).ready(function majorFunc() {
     });
 
     /**
+     * add an animated scroll after click on the collapse-menu link
+     */
+    $(".collapse").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+    /**
      * add sliders behavior
      */
     function slidersBehavior() {
@@ -78,25 +92,13 @@ $(document).ready(function majorFunc() {
             firstCountSlids = 2;
             secCountSlids = 2;
             thirtCountSlids = 2;
-            firstSpace = 60;
-            secSpace = 60;
             thirtSpace = 0;
         }
         if (window.matchMedia('(max-width: 720px)').matches) {
             firstCountSlids = 2;
-            secCountSlids = 1;
-            thirtCountSlids = 1;
-            firstSpace = 60;
-            secSpace = 60;
-            thirtSpace = 60;
         }
         if (window.matchMedia('(max-width: 500px)').matches) {
             firstCountSlids = 1;
-            secCountSlids = 1;
-            thirtCountSlids = 1;
-            firstSpace = 60;
-            secSpace = 60;
-            thirtSpace = 60;
         }
 
         var swiper5 = new Swiper('.swiper5', {
@@ -154,6 +156,24 @@ $(document).ready(function majorFunc() {
     }
 
     slidersBehavior();
+    /**
+     * TO-DO - DESTROY OLD SLIDERS!
+     */
+    $(window).resize(function () {
+        // swiper5.destroy();
+        // swiper.destroy();
+        // swiper1.destroy();
+        // swiper2.destroy();
+        // swiper5 = undefined;
+        // swiper = undefined;
+        // swiper1 = undefined;
+        // swiper2 = undefined;
+        // jQuery('.swiper-wrapper').removeAttr('style');
+        // jQuery('.swiper-slide').removeAttr('style');
+        // swiper.detachEvents();
+        // swiper.reInit() // or mySwiper.resizeFix()
+        // slidersBehavior();
+    });
 
     /**
      * this runs the rules for validating forms
@@ -240,12 +260,6 @@ $(document).ready(function majorFunc() {
         });
     });
 
-    /**
-     * TO-DO - DESTROY OLD SLIDERS!
-     */
-    $(window).resize(function () {
-        // majorFunc();
-    });
 });
 
 
