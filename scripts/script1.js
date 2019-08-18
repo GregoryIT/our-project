@@ -12,7 +12,7 @@ $(document).ready(function majorFunc() {
      * when screen`s min-width is 1100px add menu to top screen
      */
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0 && window.matchMedia('(min-width: 1100px)').matches) {
+        if ($(this).scrollTop() > 0 && window.matchMedia('(min-width: 710px)').matches) {
             $(".top-bar").addClass("fixed");
             $(".fake-top-bar").addClass("fake-top-bar-active");
         } else {
@@ -42,7 +42,7 @@ $(document).ready(function majorFunc() {
             top = $(id).offset().top;
         $('body,html').animate({
             scrollTop: top
-        }, 1000);
+        }, 1000);   
     });
 
     /**
