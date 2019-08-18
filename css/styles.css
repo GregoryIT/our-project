@@ -1164,10 +1164,16 @@ footer .tel {
     color: #25233A;
 }
 
-/*.collapse-body > div > a {*/
-/*font-style: normal;*/
-/*font-weight: 500;*/
-/*font-size: 8px;*/
-/*line-height: 22px;*/
-/*color: #25233A;*/
-/*}*/
+#collapse .collapse-body > div {
+    margin-left: 10px;
+}
+
+#collapse .collapse-body a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25233A;
+}
+
+
