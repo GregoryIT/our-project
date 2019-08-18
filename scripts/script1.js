@@ -89,7 +89,6 @@ $(document).ready(function majorFunc() {
             spaceBetween: 60,
             slidesPerView: 1,
             grabCursor: true,
-            effect: 'coverflow',
             centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next5',
