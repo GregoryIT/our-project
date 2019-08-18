@@ -1,3 +1,5 @@
+    /* СБРОС СТИЛЕЙ */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,6 @@
     font: inherit;
     vertical-align: baseline;
     outline: none;
-    /* box-sizing: border-box; */
-
 }
 
 button:hover {
@@ -36,6 +36,8 @@ swiper-button-next1 {
     cursor: pointer;
 }
 
+    /* КОНТЕЙНЕРЫ И СТРОКИ */
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -60,6 +62,8 @@ swiper-button-next1 {
     justify-content: space-between;
 }
 
+    /* ШРИФТ */
+    
 html,
 body {
     font-family: 'Montserrat', sans-serif;
@@ -71,6 +75,8 @@ body {
     background: #25233A;
     border-radius: 10px;
 }
+
+    /* ЛИПКОЕ МЕНЮ */
 
 .top-bar {
     padding: 24px 0;
@@ -154,6 +160,8 @@ body {
         padding: 0;
     }
 }
+
+    /* ПЕРВАЯ СЕКЦИЯ */
 
 .section-1-content {
     width: 100%;
@@ -322,8 +330,11 @@ body {
     }
 }
 
+    /* ВТОРАЯ СЕКЦИЯ */
+
 #section-2 {
     background: rgba(241, 241, 241, 0.9077);
+    padding: 50px 0;
 }
 
 .section-2-slider-item {
@@ -363,18 +374,11 @@ body {
     opacity: 0.9;
 }
 
-#section-2 {
-    padding: 50px 0;
-}
-
 .title {
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
-    /* identical to box height */
-
-
     color: #333333;
 }
 
@@ -402,7 +406,6 @@ body {
     }
 }
 
-
 #section-2 .container .row .section-2-card img[src="img/pl.svg"] {
     border-radius: 10px;
 }
@@ -413,88 +416,8 @@ body {
     }
 }
 
-#section-2 .container .row .section-2-card-contentBlock {
-    background-color: #ffffff;
-    position: absolute;
-    width: 300px;
-    height: 289px;
-    padding: 20px;
-    box-sizing: border-box;
-    bottom: 0;
-    opacity: 0.9;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-@media screen and (max-width: 420px) {
-    #section-2 .container .row .section-2-card-contentBlock {
-        width: 250px;
-    }
-}
-
-#section-2 .container .row .section-2-card-contentBlock .section-2-card-contentBlock-title {
-    position: relative;
-    margin-bottom: 30px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-#section-2 .container .row .section-2-card-contentBlock .section-2-card-contentBlock-title p {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: #25233A;
-}
-
-#section-2 .container .row .section-2-card-contentBlock .section-2-card-contentBlock-description {
-    position: relative;
-    justify-content: flex-start;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description img {
-    margin-right: 10px;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description p {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #25233A;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow {
-    position: relative;
-    margin: 10px 0;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature {
-    width: 100px;
-    height: 30px;
-}
-
 #section-2 .container .row .section-2-card-contentBlock .section-2-card-contentBlock-featuresRow .section-2-card-contentBlock-feature img {
     width: 30px;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .up {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #25233A;
-}
-
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .down {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    color: #25233A;
 }
 
 @media all and (-ms-high-contrast: none),
@@ -504,31 +427,13 @@ body {
     }
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
-    position: relative;
-    width: 250px;
-    height: 50px;
-    background: #FB765F;
-    box-shadow: 0px 4px 15px rgba(251, 118, 95, 0.5);
-    border-radius: 25px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-@media screen and (max-width: 420px) {
-    #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
-        width: 200px;
-    }
-}
-
 #section-2 .container .row .column {
     justify-content: space-around;
 }
 
+.section-2-slider-item p {
+    height: 40px;
+}
 
 #section-3 {
     padding: 50px 0;
@@ -540,10 +445,6 @@ body {
     font-size: 36px;
     line-height: 44px;
     color: #333333;
-}
-
-.section-2-slider-item p {
-    height: 40px;
 }
 
 #section-3 .container .row .section-3-card {
@@ -598,14 +499,14 @@ body {
     }
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-title {
+#section-3 .section-3-card-contentBlock-title {
     position: relative;
     margin-bottom: 30px;
     width: 90%;
     margin: 0 auto;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-title p {
+#section-3 .section-3-card-contentBlock-title p {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -613,16 +514,16 @@ body {
     color: #25233A;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description {
+#section-3 .section-3-card-contentBlock-description {
     position: relative;
     justify-content: flex-start;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description img {
+#section-3 .section-3-card-contentBlock-description img {
     margin-right: 10px;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-description p {
+#section-3 .section-3-card-contentBlock-description p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -631,21 +532,21 @@ body {
     color: #25233A;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow {
+#section-3 .section-3-card-contentBlock-featuresRow {
     position: relative;
     margin: 10px 0;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature {
+#section-3 .section-3-card-contentBlock-feature {
     width: 100px;
     height: 30px;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature img {
+#section-3 .section-3-card-contentBlock-feature img {
     width: 30px;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .up {
+#section-3 .section-3-card-contentBlock-feature .up {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -654,7 +555,7 @@ body {
     color: #25233A;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-featuresRow .section-3-card-contentBlock-feature .down {
+#section-3 .section-3-card-contentBlock-feature .down {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -671,7 +572,7 @@ body {
     color: #FFFFFF;
 }
 
-#section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
+#section-3 .section-3-card-contentBlock-button {
     position: relative;
     width: 250px;
     height: 50px;
@@ -687,7 +588,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-    #section-3 .container .row .section-3-card-contentBlock .section-3-card-contentBlock-button {
+    #section-3 .section-3-card-contentBlock-button {
         width: 200px;
     }
 }
@@ -891,7 +792,6 @@ body {
 .section-5-form-inputs {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
 }
 
 @media screen and (max-width: 710px) {
@@ -1088,9 +988,7 @@ footer .tel {
     position: fixed;
     width: 250px;
     background: white;
-    /*border-right: 4px solid #e0e5ea;*/
     right: -360px;
-    /*border-radius: 10px;*/
     -moz-transition: all 600ms;
     -webkit-transition: all 600ms;
     transition: all 600ms;
@@ -1175,5 +1073,3 @@ footer .tel {
     line-height: 22px;
     color: #25233A;
 }
-
-
