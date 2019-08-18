@@ -31,7 +31,6 @@ a {
 }
 
 button,
-
 swiper-button-prev1,
 swiper-button-next1 {
     cursor: pointer;
@@ -129,11 +128,13 @@ body {
     line-height: 22px;
     color: #25233A;
 }
+
 @media screen and (max-width: 710px) {
     .top-bar .container .navbar li button {
         background: rgba(55, 126, 249, 0.1);
     }
 }
+
 .top-bar .container .row {
     align-items: center;
 }
@@ -154,16 +155,31 @@ body {
     }
 }
 
+.section-1-content {
+    width: 100%;
+    display: flex;
+}
+
 .section-1 .section-1-content .section-1-content-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     padding: 50px 0;
     margin: 0 auto;
     padding-top: 50px;
     height: 420px;
+    width: 50%;
+}
+
+.section-1-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-1 .section-1-content .section-1-content-left img[src="img/dots.svg"] {
     width: 90px;
     height: 30px;
+    margin-bottom: 40px;
 }
 
 .section-1 .section-1-content .section-1-content-left p {
@@ -172,6 +188,7 @@ body {
     font-size: 36px;
     line-height: 44px;
     color: #333333;
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 710px) {
@@ -215,6 +232,7 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
+    margin: 30px 0;
 }
 
 .section-1 .section-1-content .section-1-content-left .arrow-group {
@@ -298,6 +316,10 @@ body {
     .section-1 .section-1-content {
         flex-direction: column;
     }
+
+    .section-1 .section-1-content .section-1-content-left {
+        width: 100%;
+    }
 }
 
 #section-2 {
@@ -379,7 +401,6 @@ body {
         margin-top: 0;
     }
 }
-
 
 
 #section-2 .container .row .section-2-card img[src="img/pl.svg"] {
@@ -509,9 +530,6 @@ body {
 }
 
 
-
-
-
 #section-3 {
     padding: 50px 0;
 }
@@ -548,7 +566,6 @@ body {
         margin-top: 0;
     }
 }
-
 
 
 #section-3 .container .row .section-3-card img[src="img/pl.svg"] {
@@ -693,6 +710,10 @@ body {
     width: 100%;
     /*padding: 10px;*/
     margin-bottom: 50px;
+}
+
+.swiper-container.first-swiper-container {
+    width: 90%;
 }
 
 /* .swiper-wrapper {
@@ -943,9 +964,9 @@ body {
 }
 
 /* active state */
-.section-5-form-group input:focus~label,
-.section-5-form-group input:valid~label,
-.section-5-form-group .errValidForm~label {
+.section-5-form-group input:focus ~ label,
+.section-5-form-group input:valid ~ label,
+.section-5-form-group .errValidForm ~ label {
     top: -15px;
     font-size: 14px;
     color: #5264AE;
@@ -981,8 +1002,8 @@ body {
 }
 
 /* active state */
-.section-5-form-group input:focus~.bar:before,
-.section-5-form-group input:focus~.bar:after {
+.section-5-form-group input:focus ~ .bar:before,
+.section-5-form-group input:focus ~ .bar:after {
     width: 50%;
 }
 
@@ -1066,20 +1087,18 @@ footer .tel {
 #collapse-navbar {
     position: fixed;
     width: 250px;
-    /*height: 100px;*/
-    background: #57626f;
-    border-right: 4px solid #e0e5ea;
-    right: -260px;
-    /*top: 10px;*/
-    border-radius: 10px;
+    background: white;
+    /*border-right: 4px solid #e0e5ea;*/
+    right: -360px;
+    /*border-radius: 10px;*/
     -moz-transition: all 600ms;
     -webkit-transition: all 600ms;
     transition: all 600ms;
 }
 
 #collapse-navbar.active {
-    right: 0;
-    z-index: 200;
+    right: 20px;
+    z-index: 2000;
 }
 
 #collapse-navbar ul li {
@@ -1093,11 +1112,15 @@ footer .tel {
 }
 
 #collapse-navbar ul li a {
-    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #25233A;
 }
 
 .collapse-navbar ul li a:hover {
-    color: #FFFFFF;
+    color: #dc3545;
 }
 
 #userEmail-error,
@@ -1106,3 +1129,51 @@ footer .tel {
     margin-top: 25px;
     color: #dc3545;
 }
+
+.collapse {
+    list-style-type: none;
+}
+
+.collapse-header-container {
+    border-bottom: 1px solid gray;
+}
+
+.collapse-header {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.collapse-body {
+    display: none;
+    border-top: 1px solid gray;
+    align-items: center;
+}
+
+.collapse-body > div {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 22px;
+    align-items: center;
+    color: #25233A;
+}
+
+#collapse .collapse-body > div {
+    margin-left: 10px;
+}
+
+#collapse .collapse-body a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25233A;
+}
+
+
