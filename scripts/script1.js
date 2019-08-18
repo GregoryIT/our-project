@@ -1,3 +1,8 @@
+var swiper5;
+var swiper4;
+var swiper1;
+var swiper2;
+
 /**
  * major Function. it starts when document is ready
  */
@@ -76,53 +81,59 @@ $(document).ready(function majorFunc() {
             thirtSpace = 60;
         }
 
-        var swiper5 = new Swiper('.swiper5', {
+        swiper5 = new Swiper('.swiper5', {
             direction: 'horizontal',
             loop: true,
             initialSlide: 0,
             speed: 400,
             spaceBetween: 60,
             slidesPerView: 1,
+            grabCursor: true,
+            effect: 'coverflow',
+            centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next5',
                 prevEl: '.swiper-button-prev5',
             },
         });
 
-
-        var swiper = new Swiper('.swiper', {
+        swiper4 = new Swiper('.swiper4', {
             direction: 'horizontal',
             loop: true,
+            observer: true,
             initialSlide: 0,
             speed: 400,
             spaceBetween: firstSpace,
             slidesPerView: firstCountSlids,
+            grabCursor: true,
             navigation: {
                 nextEl: '.swiper-button-next4',
                 prevEl: '.swiper-button-prev4',
             },
         });
 
-        var swiper1 = new Swiper('.swiper1', {
+        swiper1 = new Swiper('.swiper1', {
             direction: 'horizontal',
             loop: true,
             initialSlide: 0,
             speed: 400,
             spaceBetween: secSpace,
             slidesPerView: secCountSlids,
+            grabCursor: true,
             navigation: {
                 nextEl: '.swiper-button-next1',
                 prevEl: '.swiper-button-prev1',
             },
         });
 
-        var swiper2 = new Swiper('.swiper2', {
+        swiper2 = new Swiper('.swiper2', {
             direction: 'horizontal',
             loop: true,
             initialSlide: 0,
             speed: 400,
             spaceBetween: thirtSpace,
             slidesPerView: thirtCountSlids,
+            grabCursor: true,
             navigation: {
                 nextEl: '.swiper-button-next2',
                 prevEl: '.swiper-button-prev2',
@@ -131,24 +142,6 @@ $(document).ready(function majorFunc() {
     }
 
     slidersBehavior();
-    /**
-     * TO-DO - DESTROY OLD SLIDERS!
-     */
-    $(window).resize(function () {
-        // swiper5.destroy();
-        // swiper.destroy();
-        // swiper1.destroy();
-        // swiper2.destroy();
-        // swiper5 = undefined;
-        // swiper = undefined;
-        // swiper1 = undefined;
-        // swiper2 = undefined;
-        // jQuery('.swiper-wrapper').removeAttr('style');
-        // jQuery('.swiper-slide').removeAttr('style');
-        // swiper.detachEvents();
-        // swiper.reInit() // or mySwiper.resizeFix()
-        // slidersBehavior();
-    });
 
     /**
      * this runs the rules for validating forms
@@ -163,10 +156,10 @@ $(document).ready(function majorFunc() {
                 }
             },
             messages: {
-                userName: 'Please specify your name',
+                userName: 'Пожалуйста, укажите ваше имя',
                 userEmail: {
-                    required: 'Please specify your name email',
-                    email: 'Your email address must be in the format of name@domain.com'
+                    required: 'Пожалуйста, укажите ваше имя электронной почты',
+                    email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 }
             },
             errorClass: 'errValidForm'
@@ -195,6 +188,10 @@ $(document).ready(function majorFunc() {
         if (window.matchMedia('(max-width: 710px)').matches) {
             document.querySelector('.navbar-menu').addEventListener('click', function (e) {
                 document.querySelector('#collapse-navbar').classList.toggle('active');
+            });
+        } else {
+            document.querySelector('.navbar-menu').addEventListener('click', function (e) {
+                document.querySelector('#collapse-navbar').classList.remove('active');
             });
         }
         document.querySelectorAll('#collapse-navbar a').forEach(item => {
@@ -235,6 +232,21 @@ $(document).ready(function majorFunc() {
         });
     });
 
+    /**
+     * DESTROY OLD and write new SLIDERS! change a behavior Menu.
+     */
+    $(window).resize(function () {
+        swiper5.destroy();
+        swiper4.destroy();
+        swiper1.destroy();
+        swiper2.destroy();
+        swiper5,swiper4,swiper1,swiper2 = undefined;
+        jQuery('.swiper-wrapper').removeAttr('style');
+        jQuery('.swiper-slide').removeAttr('style');
+
+        slidersBehavior();
+        behaviorMenu();
+    });
 });
 
 
