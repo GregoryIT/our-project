@@ -110,6 +110,7 @@ body {
     width: 520px;
 }
 
+
 @media screen and (max-width: 710px) {
     .top-bar .container .navbar li a {
         display: none;
@@ -246,6 +247,10 @@ body {
     line-height: 25px;
     color: #FFFFFF;
     margin: 30px 0;
+}
+
+.top-bar .container button.navbar-menu:hover {
+    background-color: rgb(208, 205, 205);
 }
 
 .section-1 .section-1-content .section-1-content-left .arrow-group {
@@ -1037,32 +1042,43 @@ footer .tel {
     right: 20px;
 }
 
-#collapse-navbar ul li {
-    width: 90%;
-    margin-left: 10%;
-    padding: 15px 10px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    color: #25233A;
-}
-
-#collapse-navbar ul li a {
+.collapse-navbar-inem {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    box-sizing: border-box;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #25233A;
+    border-bottom: 1px solid gray;
 }
 
-.collapse-navbar ul li a:hover {
-    color: #dc3545;
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
 }
 
-#userEmail-error,
-#callTime-error,
-#userName-error {
-    margin-top: 25px;
+.collapse-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapse-navbar-inem > a,
+.collapse-header-container > a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #25233A;
+    margin-left: 40px;
+}
+
+.collapse-navbar-inem > a:hover,
+.collapse-header-container > a:hover {
     color: #dc3545;
 }
 
@@ -1070,21 +1086,15 @@ footer .tel {
     list-style-type: none;
 }
 
-.collapse-header-container {
-    border-bottom: 1px solid gray;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .collapse-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 50px;
     right: 20px;
     font-size: 40px;
     color: rgba(37, 35, 58, 0.84);
-    margin-bottom: 10px;
 }
 
 .collapse-header:hover {
@@ -1093,22 +1103,17 @@ footer .tel {
 
 .collapse-body {
     display: none;
-    border-top: 1px solid gray;
     align-items: center;
 }
 
 .collapse-body > div {
-    margin-top: 15px;
+    margin: 15px 0 0 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 22px;
     align-items: center;
     color: #25233A;
-}
-
-#collapse .collapse-body > div {
-    margin-left: 10px;
 }
 
 #collapse .collapse-body a {
@@ -1123,14 +1128,21 @@ footer .tel {
     display: none;
 }
 
-.collapse-navbar-menu li {
-    border-bottom: 1px solid gray;
-}
-
 .collapse-navbar-menu.active-navbar {
     display: block;
 }
 
 .container-head {
     position: relative;
+}
+
+#userEmail-error,
+#callTime-error,
+#userName-error {
+    margin-top: 25px;
+    color: #dc3545;
+}
+
+button:hover {
+    transition: all .3s linear;
 }
