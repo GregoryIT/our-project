@@ -126,7 +126,7 @@ body {
 .top-bar .container .navbar li button {
     width: 135px;
     height: 40px;
-    background-color: white;
+    background-color: rgb(235, 232, 232);
     border-radius: 10px;
     font-style: normal;
     font-weight: 600;
