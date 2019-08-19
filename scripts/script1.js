@@ -209,24 +209,30 @@ $(document).ready(function majorFunc() {
             document.querySelector('.collapse-navbar-menu').classList.remove('active-navbar');
             document.querySelector('#collapse-navbar').classList.add('active-fixed');
         }
-
-        document.querySelector('.navbar-menu').addEventListener('click', function (e) {
-            if (window.matchMedia('(max-width: 710px)').matches) {
-                document.querySelector('#collapse-navbar').classList.remove('active-fixed');
-                document.querySelector('#collapse-navbar').classList.toggle('active');
-            } else {
-                document.querySelector('#collapse-navbar').classList.toggle('active-fixed');
-                document.querySelector('#collapse-navbar').classList.remove('active');
-            }
-        });
-
-        document.querySelectorAll('#collapse-navbar a').forEach(item => {
-            item.addEventListener('click', (e) => {
-                document.querySelector('#collapse-navbar').classList.remove('active');
-                document.querySelector('#collapse-navbar').classList.remove('active-fixed');
-            });
-        });
     };
+
+    /**
+     * add listener for navbar-menu button
+     */
+    document.querySelector('.navbar-menu').addEventListener('click', function (e) {
+        if (window.matchMedia('(max-width: 710px)').matches) {
+            document.querySelector('#collapse-navbar').classList.remove('active-fixed');
+            document.querySelector('#collapse-navbar').classList.toggle('active');
+        } else {
+            document.querySelector('#collapse-navbar').classList.toggle('active-fixed');
+            document.querySelector('#collapse-navbar').classList.remove('active');
+        }
+    });
+
+    /**
+     * add listener for navbar-menu links(close navbar-menu)
+     */
+    document.querySelectorAll('#collapse-navbar a').forEach(item => {
+        item.addEventListener('click', (e) => {
+            document.querySelector('#collapse-navbar').classList.remove('active');
+            document.querySelector('#collapse-navbar').classList.remove('active-fixed');
+        });
+    });
 
     behaviorMenu();
 
