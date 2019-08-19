@@ -241,18 +241,23 @@ $(document).ready(function majorFunc() {
     /**
      * DESTROY OLD and write new SLIDERS! change a behavior Menu.
      */
-    $(window).resize(function () {
+    window.onresize = function() {
         swiper5.destroy();
         swiper4.destroy();
         swiper1.destroy();
         swiper2.destroy();
-        swiper5, swiper4, swiper1, swiper2 = undefined;
+
+        swiper5 = undefined; 
+        swiper4 = undefined;
+        swiper1 = undefined;
+        swiper2 = undefined;
+
         jQuery('.swiper-wrapper').removeAttr('style');
         jQuery('.swiper-slide').removeAttr('style');
 
         slidersBehavior();
         behaviorMenu();
-    });
+    };
 });
 
 
