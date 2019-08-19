@@ -420,10 +420,6 @@ body {
     }
 }
 
-#section-2 .container .row .section-2-card-contentBlock .section-2-card-contentBlock-featuresRow .section-2-card-contentBlock-feature img {
-    width: 30px;
-}
-
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
     #section-3 .container .row .section-3-card-contentBlock button {
