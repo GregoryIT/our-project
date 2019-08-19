@@ -44,12 +44,12 @@ $(document).ready(function majorFunc() {
      * add sliders behavior
      */
     function slidersBehavior() {
-        let firstCountSlids = 3;
-        let secCountSlids = 3;
-        let thirtCountSlids = 3;
-        let firstSpace = 60;
-        let secSpace = 60;
-        let thirtSpace = 60;
+        var firstCountSlids = 3;
+        var secCountSlids = 3;
+        var thirtCountSlids = 3;
+        var firstSpace = 60;
+        var secSpace = 60;
+        var thirtSpace = 60;
 
         if (window.matchMedia('(max-width: 1099px)').matches) {
             firstCountSlids = 2;
@@ -168,7 +168,7 @@ $(document).ready(function majorFunc() {
     /**
      * add behavior for the collapse-menu
      */
-    const behaviorMenu = () => {
+    const behaviorMenu = function () {
         if (window.matchMedia('(max-width: 710px)').matches) {
             document.querySelector('.collapse-navbar-menu').classList.add('active-navbar');
             document.querySelector('#collapse-navbar').classList.remove('active-fixed');
@@ -197,8 +197,8 @@ $(document).ready(function majorFunc() {
     /**
      * add listener for navbar-menu links(close navbar-menu)
      */
-    document.querySelectorAll('#collapse-navbar a').forEach(item => {
-        item.addEventListener('click', (e) => {
+    document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
+        item.addEventListener('click', function (e) {
             document.querySelector('#collapse-navbar').classList.remove('active');
             document.querySelector('#collapse-navbar').classList.remove('active-fixed');
         });
