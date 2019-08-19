@@ -201,11 +201,14 @@ $(document).ready(function majorFunc() {
         if (window.matchMedia('(max-width: 710px)').matches) {
             document.querySelector('.collapse-navbar-menu').classList.add('active-navbar');
             document.querySelector('#collapse-navbar').classList.remove('active-fixed');
+            $(".top-bar").removeClass("fixed");
+            $(".fake-top-bar").removeClass("fake-top-bar-active");
         } else {
+            $(".top-bar").addClass("fixed");
+            $(".fake-top-bar").addClass("fake-top-bar-active");
             document.querySelector('.collapse-navbar-menu').classList.remove('active-navbar');
             document.querySelector('#collapse-navbar').classList.add('active-fixed');
         }
-
 
         document.querySelector('.navbar-menu').addEventListener('click', function (e) {
             if (window.matchMedia('(max-width: 710px)').matches) {
