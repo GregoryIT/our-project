@@ -214,7 +214,6 @@ $(document).ready(function majorFunc() {
             } else {
                 document.querySelector('#collapse-navbar').classList.toggle('active-fixed');
                 document.querySelector('#collapse-navbar').classList.remove('active');
-
             }
         });
 
