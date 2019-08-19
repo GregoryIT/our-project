@@ -10,10 +10,6 @@
     outline: none;
 }
 
-button:hover {
-    filter: brightness(0.8);
-}
-
 a:hover {
     text-decoration: underline;
 }
@@ -233,7 +229,7 @@ body {
     }
 }
 
-.section-1 .section-1-content .section-1-content-left button {
+.section-1-content-left button {
     width: 200px;
     height: 60px;
     background: #FB765F;
@@ -332,6 +328,17 @@ body {
     .section-1 .section-1-content .section-1-content-left {
         width: 100%;
     }
+}
+
+.section-1-content-left button:hover,
+.section-3-card-contentBlock button:hover,
+.section-5-form button:hover,
+.section-4-slider-item button:hover {
+    background: rgb(226, 92, 69);
+}
+
+.section-1-content-right button:hover {
+    border-color: rgb(226, 92, 69);
 }
 
 /* ВТОРАЯ СЕКЦИЯ */
@@ -572,7 +579,7 @@ body {
     color: #FFFFFF;
 }
 
-#section-3 .section-3-card-contentBlock-button {
+.section-3-card-contentBlock-button {
     position: relative;
     width: 250px;
     height: 50px;
@@ -710,6 +717,10 @@ body {
     }
 }
 
+.swiper-button-next5,
+.swiper-button-prev5 {
+    cursor: pointer;
+}
 .section-2-swiper-buttons .swiper-button-next4,
 .section-2-swiper-buttons .swiper-button-prev4,
 .section-3-swiper-buttons .swiper-button-next1,
