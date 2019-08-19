@@ -330,6 +330,11 @@ body {
     color: #FB765F;
 }
 
+.section-1 .section-1-content .section-1-content-right button:hover {
+  color: #fb4525;
+  border-color: #fb4525;
+}
+
 @media screen and (max-width: 1100px) {
     .section-1 .section-1-content {
         flex-direction: column;
@@ -393,6 +398,11 @@ body {
     line-height: 22px;
     color: #377EF9;
     opacity: 0.9;
+}
+
+.section-2-slider-item button:hover {
+  color: #146aff;
+  border-color: #146aff;
 }
 
 .title {
@@ -1143,8 +1153,13 @@ footer .tel {
     color: #dc3545;
 }
 
-button:hover {
-    transition: all .3s linear;
+button,
+[class^="swiper-button"] {
+    transition: all .2s linear;
+}
+
+[class^="swiper-button"]:hover {
+  filter: brightness(-60%);
 }
 
 .container {
