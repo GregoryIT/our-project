@@ -1001,7 +1001,7 @@ footer .tel {
 
 #collapse-navbar {
     position: fixed;
-    width: 250px;
+    width: 275px;
     background: white;
     max-height: 700px;
     right: -360px;
@@ -1014,25 +1014,23 @@ footer .tel {
 
 #collapse-navbar.active {
     position: absolute;
-    right: 20px;
+    right: 0;
 }
 
 #collapse-navbar.active-fixed {
     position: fixed;
-    right: 20px;
+    right: 0;
+
 }
 
-.collapse-navbar-inem {
-    display: flex;
-    align-items: center;
-    min-height: 60px;
+.collapse-navbar-item {
     box-sizing: border-box;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: #25233A;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #B7C2D6;
 }
 
 .navbar-item {
@@ -1045,9 +1043,12 @@ footer .tel {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 20px;
+    box-sizing: border-box;
+    min-height: 60px;
 }
 
-.collapse-navbar-inem > a,
+.collapse-navbar-item > a,
 .collapse-header-container > a{
     font-style: normal;
     font-weight: 500;
@@ -1057,7 +1058,7 @@ footer .tel {
     margin-left: 40px;
 }
 
-.collapse-navbar-inem > a:hover,
+.collapse-navbar-item > a:hover,
 .collapse-header-container > a:hover {
     color: #dc3545;
 }
@@ -1084,10 +1085,11 @@ footer .tel {
 .collapse-body {
     display: none;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .collapse-body > div {
-    margin: 15px 0 0 40px;
+    padding: 7px 10px 8px 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
