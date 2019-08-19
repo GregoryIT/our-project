@@ -18,6 +18,10 @@ a:hover {
     text-decoration: underline;
 }
 
+button a:hover {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -649,6 +653,15 @@ body {
 }
 
 .section-4-slider-item a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #3E3E54;
+}
+
+.section-4-slider-item button a {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
