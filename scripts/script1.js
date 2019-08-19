@@ -46,6 +46,30 @@ $(document).ready(function majorFunc() {
     });
 
     /**
+     * add an animated scroll after click on the collapse-navbar-menu link
+     */
+    $(".collapse-navbar-menu").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+    /**
+     * add an animated scroll after click on the section-1-content-right link 'get call'
+     */
+    $(".section-1-content-right").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
+    /**
      * add sliders behavior
      */
     function slidersBehavior() {
@@ -171,38 +195,33 @@ $(document).ready(function majorFunc() {
     $("input[name=user-phone]").mask("+375 (99) 99 99 999");
 
     /**
-     * hide the menu when a click occurs outside the menu
-     */
-    $(document).mouseup(function (e) {
-        let isActive = document.querySelector('#collapse-navbar').classList.contains('active');
-        var container = $("#collapse-navbar");
-
-        if ($(e.target).hasClass('navbar-menu')) {
-            return false;
-        }
-
-        if ((container.has(e.target).length === 0) && isActive) {
-            document.querySelector('#collapse-navbar').classList.toggle('active');
-        }
-    });
-
-    /**
      * add behavior for the collapse-menu
      */
     const behaviorMenu = () => {
         if (window.matchMedia('(max-width: 710px)').matches) {
             document.querySelector('.collapse-navbar-menu').classList.add('active-navbar');
+            document.querySelector('#collapse-navbar').classList.remove('active-fixed');
         } else {
             document.querySelector('.collapse-navbar-menu').classList.remove('active-navbar');
+            document.querySelector('#collapse-navbar').classList.add('active-fixed');
         }
 
+
         document.querySelector('.navbar-menu').addEventListener('click', function (e) {
-            document.querySelector('#collapse-navbar').classList.toggle('active');
+            if (window.matchMedia('(max-width: 710px)').matches) {
+                document.querySelector('#collapse-navbar').classList.remove('active-fixed');
+                document.querySelector('#collapse-navbar').classList.toggle('active');
+            } else {
+                document.querySelector('#collapse-navbar').classList.toggle('active-fixed');
+                document.querySelector('#collapse-navbar').classList.remove('active');
+
+            }
         });
 
         document.querySelectorAll('#collapse-navbar a').forEach(item => {
             item.addEventListener('click', (e) => {
                 document.querySelector('#collapse-navbar').classList.remove('active');
+                document.querySelector('#collapse-navbar').classList.remove('active-fixed');
             });
         });
     };

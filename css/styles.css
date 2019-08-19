@@ -84,6 +84,11 @@ body {
 
 .top-bar {
     padding: 24px 0;
+    z-index: 2005;
+}
+
+.container {
+    z-index: 2005;
 }
 
 .fixed {
@@ -92,7 +97,7 @@ body {
     width: 100%;
     transition: all .5s linear;
     background: rgba(255, 255, 255, 0.9);
-    z-index: 2;
+    z-index: 201;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1006,15 +1011,23 @@ footer .tel {
     position: fixed;
     width: 250px;
     background: white;
+    max-height: 700px;
     right: -360px;
     -moz-transition: all 600ms;
     -webkit-transition: all 600ms;
     transition: all 600ms;
+    z-index: 100;
+
 }
 
 #collapse-navbar.active {
+    position: absolute;
     right: 20px;
-    z-index: 2000;
+}
+
+#collapse-navbar.active-fixed {
+    position: fixed;
+    right: 20px;
 }
 
 #collapse-navbar ul li {
@@ -1052,16 +1065,23 @@ footer .tel {
 
 .collapse-header-container {
     border-bottom: 1px solid gray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .collapse-header {
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 50px;
     right: 20px;
-    text-align: center;
-    align-items: center;
+    font-size: 40px;
+    color: rgba(37, 35, 58, 0.84);
+    margin-bottom: 10px;
+}
+
+.collapse-header:hover {
+    cursor: pointer;
 }
 
 .collapse-body {
@@ -1102,4 +1122,11 @@ footer .tel {
 
 .collapse-navbar-menu.active-navbar {
     display: block;
+}
+
+
+
+
+.container-head {
+    position: relative;
 }
