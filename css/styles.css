@@ -466,12 +466,12 @@ img[src="img/dots.svg"] {
 }
 
 
-img[src="img/pl.svg"] {
+img[src="img/pl.jpg"] {
     border-radius: 10px;
 }
 
 @media screen and (max-width: 420px) {
-    img[src="img/pl.svg"] {
+    img[src="img/pl.jpg"] {
         width: 300px;
     }
 }
@@ -999,6 +999,7 @@ footer .tel {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
 }
 
 #collapse-navbar {
