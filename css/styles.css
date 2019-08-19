@@ -1146,3 +1146,36 @@ footer .tel {
 button:hover {
     transition: all .3s linear;
 }
+
+.container {
+    z-index: -1;
+}
+/*.container-bg:before {*/
+    /*content: "";*/
+    /*width: 70vmax;*/
+    /*height: 70vmax;*/
+    /*position: absolute;*/
+    /*background-color: rgba(59,59,59,0.397);*/
+    /*left: -20vmin;*/
+    /*top: -20vmin;*/
+    /*-webkit-animation: morph 15s linear infinite alternate, spin 20s linear infinite;*/
+    /*animation: morph 15s linear infinite alternate, spin 20s linear infinite;*/
+    /*z-index: 1;*/
+    /*will-change: border-radius, transform;*/
+    /*-webkit-transform-origin: 55% 55%;*/
+    /*transform-origin: 55% 55%;*/
+    /*pointer-events: none;*/
+/*}*/
+
+/*.container-bg:after {*/
+    /*background-color: #039BE5;*/
+    /*width: 70vmin;*/
+    /*height: 70vmin;*/
+    /*left: auto;*/
+    /*right: -10vmin;*/
+    /*top: auto;*/
+    /*bottom: 0;*/
+    /*animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;*/
+    /*-webkit-transform-origin: 20% 20%;*/
+    /*transform-origin: 20% 20%;*/
+/*}*/
