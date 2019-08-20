@@ -158,14 +158,12 @@ $(document).ready(function majorFunc() {
             rules: {
                 userName: {required: true},
                 userEmail: {
-                    required: true,
                     email: true
                 }
             },
             messages: {
                 userName: 'Пожалуйста, укажите ваше имя',
                 userEmail: {
-                    required: 'Пожалуйста, укажите ваш адрес электронной почты',
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
                 callTime: 'это поле обязательно для заполнения'

@@ -476,19 +476,24 @@
                     </div>
 
                     <div class="section-5-form-group">
-                        <input type="email" id="userEmail" name="userEmail" required>
+                        <input type="email" id="userEmail" name="userEmail">
                         <span class="section-5-form-group-bar"></span>
                         <label class="section-5-inner-label">Email</label>
                     </div>
                 </div>
                 <div class="section-5-inner">
                     <div class="section-5-form-group">
-                        <input type="tel" id="phone" name="user-phone" placeholder="+ 375 (--) -- -- ---">
+                        <input type="tel" id="phone" name="user-phone" placeholder="+ 375 (--) -- -- ---" required>
                     </div>
                     <div class="section-5-form-group">
-                        <input type="text" id="callTime" name="callTime" required>
-                        <span class="section-5-form-group-bar"></span>
-                        <label class="section-5-inner-label">Удобное время для связи?</label>
+                        <select size="1"  name="formQuestions">
+                            <option value="" class="form-option-first">Какой вопрос вас интересует?</option>
+                            <option value="Визы">Визы</option>
+                            <option value="Карта Поляка">Карта Поляка</option>
+                            <option value="ВНЖ/ПМЖ">ВНЖ/ПМЖ</option>
+                            <option value="Гражданство">Гражданство</option>
+                            <option value="Школа польского языка">Школа польского языка</option>
+                        </select>
                     </div>
                 </div>
             </div>

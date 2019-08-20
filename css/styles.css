@@ -859,7 +859,8 @@ img[src="img/pl.jpg"] {
     margin-bottom: 30px;
 }
 
-.section-5-form-group input {
+.section-5-form-group input,
+.section-5-form-group select {
     padding: 10px;
     display: block;
     width: 100%;
@@ -870,6 +871,10 @@ img[src="img/pl.jpg"] {
     font-size: 18px;
     line-height: 22px;
     color: #25233A;
+}
+
+.section-5-form-group select:first-child {
+    color: #999;
 }
 
 .section-5-form-group label,
@@ -905,7 +910,7 @@ img[src="img/pl.jpg"] {
 
 /* active state */
 .section-5-form-group input:focus ~ label,
-.section-5-form-group input:valid ~ label,
+/*.section-5-form-group input:valid ~ label,*/
 .section-5-form-group .errValidForm ~ label {
     top: -15px;
     font-size: 14px;
@@ -1146,7 +1151,8 @@ footer .tel {
 
 #userEmail-error,
 #callTime-error,
-#userName-error {
+#userName-error,
+#phone-error {
     margin-top: 25px;
     color: #dc3545;
 }
@@ -1175,3 +1181,4 @@ button,
     transform: rotate(1turn);
   }
 }
+
