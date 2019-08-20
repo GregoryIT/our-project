@@ -79,6 +79,9 @@ $(document).ready(function majorFunc() {
 
         swiper5 = new Swiper('.swiper5', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -94,6 +97,9 @@ $(document).ready(function majorFunc() {
 
         swiper4 = new Swiper('.swiper4', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 4900,
+            },
             loop: true,
             observer: true,
             initialSlide: 0,
@@ -109,6 +115,9 @@ $(document).ready(function majorFunc() {
 
         swiper1 = new Swiper('.swiper1', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 5200,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -123,6 +132,9 @@ $(document).ready(function majorFunc() {
 
         swiper2 = new Swiper('.swiper2', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 4800,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
