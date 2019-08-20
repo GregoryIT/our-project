@@ -878,6 +878,7 @@ img[src="img/pl.jpg"] {
 .section-5-form-group select {
     padding: 10px;
     display: block;
+    box-sizing: border-box;
     width: 100%;
     background: #F9FAFB;
     border: none;
@@ -1170,7 +1171,8 @@ footer .tel {
 #userEmail-error,
 #callTime-error,
 #userName-error,
-#phone-error {
+#phone-error,
+#formQuestions-error{
     margin-top: 25px;
     color: #dc3545;
 }
