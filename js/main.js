@@ -174,17 +174,16 @@ $(document).ready(function majorFunc() {
     $('#new-form')
         .validate({
             rules: {
-                userName: {required: true},
                 userEmail: {
                     email: true
                 }
             },
             messages: {
-                userName: 'Пожалуйста, укажите ваше имя',
                 userEmail: {
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
-                userPhone: 'Укажите ваш номер телефона'
+                userPhone: 'Укажите ваш номер телеыона',
+                formQuestions: 'Пожалуйста, выберите вопрос'
             },
             errorClass: 'errValidForm'
         });
@@ -192,7 +191,7 @@ $(document).ready(function majorFunc() {
     /**
      * this runs the rules for validating input-phone
      */
-    $("input[name=user-phone]").mask("+375 (99) 99 99 999");
+    $("input[name=userPhone]").mask("+375 (99) 99 99 999");
 
     /**
      * add behavior for the collapse-menu
@@ -287,6 +286,13 @@ $(document).ready(function majorFunc() {
         slidersBehavior();
         behaviorMenu();
     };
+
+    /**
+     * add transition affect for modal window
+     */
+    $("#fade").modal({
+        fadeDuration: 100
+    });
 });
 
 
