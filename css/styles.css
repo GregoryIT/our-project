@@ -169,7 +169,9 @@ img[src="img/logo.svg"] {
     width: 70vmax;
     height: 70vmax;
     position: absolute;
-    background-color: rgba(59,59,59,0.397);
+    /*background-color: rgba(59,59,59,0.397);*/
+    background: #E9F0FC;
+    opacity: 0.5;
     left: -20vmin;
     top: -20vmin;
     -webkit-animation: morph 15s linear infinite alternate, spin 20s linear infinite;
@@ -182,7 +184,8 @@ img[src="img/logo.svg"] {
 }
 
 .section-1:after {
-    background-color: #039BE5;
+    background: #2569E3;
+    opacity: 0.3;
     width: 70vmin;
     height: 70vmin;
     left: auto;
@@ -389,6 +392,11 @@ img[src="img/dots.svg"] {
     border-color: rgb(226, 92, 69);
 }
 
+.section-1-arrow {
+    text-align: center;
+    z-index: 5000;
+}
+
 /* ВТОРАЯ СЕКЦИЯ */
 
 #section-2 {
@@ -469,6 +477,13 @@ img[src="img/dots.svg"] {
     font-size: 36px;
     line-height: 44px;
     color: #333333;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 710px) {
+    #section-3 .title, .section-4-title h3 {
+        text-align: center;
+    }
 }
 
 #section-3 .section-3-card {
@@ -910,13 +925,16 @@ img[src="img/pl.jpg"] {
 
 /* active state */
 .section-5-form-group input:focus ~ label,
-/*.section-5-form-group input:valid ~ label,*/
+.section-5-form-group input:valid ~ label,
 .section-5-form-group .errValidForm ~ label {
     top: -15px;
     font-size: 14px;
     color: #5264AE;
 }
 
+.section-5-form-group .section-5-inner-label ~ label  {
+    top: 0;
+}
 
 /* BOTTOM BARS ================================= */
 .section-5-form-group-bar {
