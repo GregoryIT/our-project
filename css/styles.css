@@ -410,6 +410,8 @@ img[src="img/dots.svg"] {
 }
 
 .section-2-slider-item p {
+    margin: 10px 0;
+    height: 22px;
     font-style: normal;
     text-align: center;
     font-weight: 600;
@@ -446,10 +448,6 @@ img[src="img/dots.svg"] {
     color: #333333;
 }
 
-.section-2-slider-item p {
-    margin: 20px 0;
-}
-
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
     .section-3-card-contentBlock button {
@@ -459,10 +457,6 @@ img[src="img/dots.svg"] {
 
 #section-2 .column {
     justify-content: space-around;
-}
-
-.section-2-slider-item p {
-    height: 40px;
 }
 
 #section-3 {
@@ -596,6 +590,8 @@ img[src="img/pl.jpg"] {
 }
 
 .section-3-card-contentBlock button a {
+    display: inline-block;
+    padding: 15px 80px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -607,7 +603,6 @@ img[src="img/pl.jpg"] {
 .section-3-card-contentBlock-button {
     position: relative;
     width: 250px;
-    height: 50px;
     background: #FB765F;
     box-shadow: 0px 4px 15px rgba(251, 118, 95, 0.5);
     border-radius: 25px;
@@ -690,6 +685,8 @@ img[src="img/pl.jpg"] {
 }
 
 .section-4-slider-item button a {
+    display: inline-block;
+    padding: 15px 50px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -712,9 +709,7 @@ img[src="img/pl.jpg"] {
 }
 
 .section-4-slider-item button {
-    /*position: absolute;*/
     width: 180px;
-    height: 50px;
     background: #FB765F;
     box-shadow: 0px 2px 10px rgba(251, 118, 95, 0.5);
     border-radius: 25px;
@@ -864,7 +859,8 @@ img[src="img/pl.jpg"] {
     margin-bottom: 30px;
 }
 
-.section-5-form-group input {
+.section-5-form-group input,
+.section-5-form-group select {
     padding: 10px;
     display: block;
     width: 100%;
@@ -875,6 +871,10 @@ img[src="img/pl.jpg"] {
     font-size: 18px;
     line-height: 22px;
     color: #25233A;
+}
+
+.section-5-form-group select:first-child {
+    color: #999;
 }
 
 .section-5-form-group label,
@@ -910,7 +910,7 @@ img[src="img/pl.jpg"] {
 
 /* active state */
 .section-5-form-group input:focus ~ label,
-.section-5-form-group input:valid ~ label,
+/*.section-5-form-group input:valid ~ label,*/
 .section-5-form-group .errValidForm ~ label {
     top: -15px;
     font-size: 14px;
@@ -1151,7 +1151,8 @@ footer .tel {
 
 #userEmail-error,
 #callTime-error,
-#userName-error {
+#userName-error,
+#phone-error {
     margin-top: 25px;
     color: #dc3545;
 }
@@ -1180,3 +1181,4 @@ button,
     transform: rotate(1turn);
   }
 }
+

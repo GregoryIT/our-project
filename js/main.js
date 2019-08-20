@@ -27,7 +27,8 @@ $(document).ready(function majorFunc() {
     $(".top-bar, \
        .collapse, \
        .collapse-navbar-menu, \
-       .section-1-content-right\
+       .section-1-content-right,\
+       .order-scroll\
     ").on("click", "a", function (event) {
         event.preventDefault();
 
@@ -78,6 +79,9 @@ $(document).ready(function majorFunc() {
 
         swiper5 = new Swiper('.swiper5', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -93,6 +97,9 @@ $(document).ready(function majorFunc() {
 
         swiper4 = new Swiper('.swiper4', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 4900,
+            },
             loop: true,
             observer: true,
             initialSlide: 0,
@@ -108,6 +115,9 @@ $(document).ready(function majorFunc() {
 
         swiper1 = new Swiper('.swiper1', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 5200,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -122,6 +132,9 @@ $(document).ready(function majorFunc() {
 
         swiper2 = new Swiper('.swiper2', {
             direction: 'horizontal',
+            autoplay: {
+                delay: 4800,
+            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -145,14 +158,12 @@ $(document).ready(function majorFunc() {
             rules: {
                 userName: {required: true},
                 userEmail: {
-                    required: true,
                     email: true
                 }
             },
             messages: {
                 userName: 'Пожалуйста, укажите ваше имя',
                 userEmail: {
-                    required: 'Пожалуйста, укажите ваш адрес электронной почты',
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
                 callTime: 'это поле обязательно для заполнения'
@@ -247,7 +258,7 @@ $(document).ready(function majorFunc() {
         swiper1.destroy();
         swiper2.destroy();
 
-        swiper5 = undefined; 
+        swiper5 = undefined;
         swiper4 = undefined;
         swiper1 = undefined;
         swiper2 = undefined;
