@@ -27,7 +27,8 @@ $(document).ready(function majorFunc() {
     $(".top-bar, \
        .collapse, \
        .collapse-navbar-menu, \
-       .section-1-content-right\
+       .section-1-content-right,\
+       .order-scroll\
     ").on("click", "a", function (event) {
         event.preventDefault();
 
@@ -247,7 +248,7 @@ $(document).ready(function majorFunc() {
         swiper1.destroy();
         swiper2.destroy();
 
-        swiper5 = undefined; 
+        swiper5 = undefined;
         swiper4 = undefined;
         swiper1 = undefined;
         swiper2 = undefined;
