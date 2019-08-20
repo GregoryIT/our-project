@@ -45,7 +45,8 @@ $(document).ready(function majorFunc() {
        .collapse, \
        .collapse-navbar-menu, \
        .section-1-content-right,\
-       .order-scroll\
+       .order-scroll,\
+       .section-1-arrow\
     ").on("click", "a", function (event) {
         event.preventDefault();
 
@@ -183,7 +184,7 @@ $(document).ready(function majorFunc() {
                 userEmail: {
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
-                callTime: 'это поле обязательно для заполнения'
+                userPhone: 'Укажите ваш номер телефона'
             },
             errorClass: 'errValidForm'
         });
