@@ -1200,3 +1200,6 @@ button,
   }
 }
 
+.jquery-modal.blocker.current {
+    z-index: 200;
+}

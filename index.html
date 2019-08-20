@@ -12,7 +12,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-     <!--<link rel="stylesheet" href="css/bubles.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
     <title>Visago - Visa Free</title>
@@ -163,14 +163,24 @@
                     <img src="img/school.svg" alt="school">
                     <div class="card-text column">
                         <p class="up">Школа польского языка</p>
-                        <a href="#" class="down">Подробнее</a>
+                        <a href="#ex1" rel="modal:open" class="down">Подробнее</a>
                     </div>
+                </div>
+                <div id="ex1" class="modal">
+                    <p><span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorum, eum illo iste nisi quod sint tempora ut veritatis! Aut cumque debitis eligendi laborum perferendis quas sint vel veritatis voluptate!</span>5</span>
+                    </p>
+                    <a href="#" rel="modal:close">Close</a>
                 </div>
                 <div class="card row">
                     <img src="img/school.svg" alt="school">
                     <div class="card-text column">
                         <p class="up">Школа польского языка</p>
-                        <a href="#" class="down">Подробнее</a>
+                        <a href="#ex2" rel="modal:open" class="down">Подробнее</a>
+                    </div>
+                    <div id="ex2" class="modal">
+                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <a href="#section-5-feedback">
@@ -179,7 +189,7 @@
             </div>
         </div>
         <div class="section-1-arrow">
-            <a href="#section-5-feedback"><img src="img/1-section-arrow.svg" alt="" ></a>
+            <a href="#section-5-feedback"><img src="img/1-section-arrow.svg" alt=""></a>
         </div>
     </div>
 </section>
@@ -211,7 +221,8 @@
                                 <p class="down">50 дней</p>
                             </div>
                         </div>
-                        <button class="order-scroll section-3-card-contentBlock-button"><a href="#section-1">Заказать</a></button>
+                        <button class="order-scroll section-3-card-contentBlock-button"><a
+                                href="#section-1">Заказать</a></button>
                     </div>
                 </div>
                 <div class="section-3-card swiper-slide swiper-wrapper-inner">
@@ -237,7 +248,8 @@
                                 <p class="down">50 дней</p>
                             </div>
                         </div>
-                        <button class="order-scroll section-3-card-contentBlock-button"><a href="#section-1">Заказать</a></button>
+                        <button class="order-scroll section-3-card-contentBlock-button"><a
+                                href="#section-1">Заказать</a></button>
                     </div>
                 </div>
                 <div class="section-3-card swiper-slide swiper-wrapper-inner">
@@ -263,7 +275,8 @@
                                 <p class="down">50 дней</p>
                             </div>
                         </div>
-                        <button class="order-scroll section-3-card-contentBlock-button"><a href="#section-1">Заказать</a></button>
+                        <button class="order-scroll section-3-card-contentBlock-button"><a
+                                href="#section-1">Заказать</a></button>
                     </div>
                 </div>
                 <div class="section-3-card swiper-slide swiper-wrapper-inner">
@@ -289,7 +302,8 @@
                                 <p class="down">50 дней</p>
                             </div>
                         </div>
-                        <button class="order-scroll section-3-card-contentBlock-button"><a href="#section-1">Заказать</a></button>
+                        <button class="order-scroll section-3-card-contentBlock-button"><a
+                                href="#section-1">Заказать</a></button>
                     </div>
                 </div>
                 <div class="section-3-card swiper-slide swiper-wrapper-inner">
@@ -315,7 +329,8 @@
                                 <p class="down">50 дней</p>
                             </div>
                         </div>
-                        <button class="order-scroll section-3-card-contentBlock-button"><a href="#section-1">Заказать</a></button>
+                        <button class="order-scroll section-3-card-contentBlock-button"><a
+                                href="#section-1">Заказать</a></button>
                     </div>
                 </div>
             </div>
@@ -339,7 +354,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex3" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex3" class="modal">
+                        <p><span>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -347,7 +367,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex4" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex4" class="modal">
+                        <p><span>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -355,7 +380,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex5" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex5" class="modal">
+                        <p><span>5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -363,7 +393,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex6" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex6" class="modal">
+                        <p><span>6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -371,7 +406,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex7" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex7" class="modal">
+                        <p><span>7Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -379,7 +419,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex8" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex8" class="modal">
+                        <p><span>8Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -387,7 +432,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex9" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex9" class="modal">
+                        <p><span>9Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -395,7 +445,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex10" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex10" class="modal">
+                        <p><span>10Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
                 <div class="swiper-wrapper-inner swiper-slide">
@@ -403,7 +458,12 @@
                         <img src="img/services/services.svg" alt="services">
                         <h4>Школа Польского языка</h4>
                         <button class="order-scroll"><a href="#section-1">Заказать</a></button>
-                        <a href="#">Подробнее...</a>
+                        <a href="#ex11" rel="modal:open">Подробнее...</a>
+                    </div>
+                    <div id="ex11" class="modal">
+                        <p><span>11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque est fugit natus non omnis pariatur perspiciatis quas veritatis voluptas voluptatibus. Aliquid consectetur dolor dolores impedit quo recusandae repellat temporibus vel?</span><span>Ab asperiores aut impedit laborum minima nam possimus repellendus vel voluptate! Atque autem consectetur enim eos explicabo illum ipsam iste labore laboriosam neque nobis, perferendis, quam quis similique sunt tempore?</span>
+                        </p>
+                        <a href="#" rel="modal:close">Close</a>
                     </div>
                 </div>
             </div>
@@ -470,11 +530,11 @@
         </div>
         <form action="#" id="new-form" name="new-form" method="post" class="section-5-form">
 
-          <!-- Hidden Required Fields -->
-          <input type="hidden" name="project_name" value="VisaGo">
-          <input type="hidden" name="admin_email" value="z-m@tut.by">
-          <input type="hidden" name="form_subject" value="Zayavka s VisaGo">
-          <!-- END Hidden Required Fields -->
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="VisaGo">
+            <input type="hidden" name="admin_email" value="z-m@tut.by">
+            <input type="hidden" name="form_subject" value="Zayavka s VisaGo">
+            <!-- END Hidden Required Fields -->
 
             <div class="section-5-form-inputs">
                 <div class="section-5-inner">
@@ -495,7 +555,7 @@
                         <input type="tel" id="phone" name="userPhone" placeholder="+ 375 (--) -- -- ---" required>
                     </div>
                     <div class="section-5-form-group">
-                        <select size="1"  name="formQuestions">
+                        <select size="1" name="formQuestions">
                             <option value="" class="form-option-first">Какой вопрос вас интересует?</option>
                             <option value="Визы">Визы</option>
                             <option value="Карта Поляка">Карта Поляка</option>
@@ -546,6 +606,7 @@
 
 <script type="text/javascript" src="js/libs/jquery.js"></script>
 <script type="text/javascript" src="js/libs/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
