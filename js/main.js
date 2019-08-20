@@ -8,6 +8,23 @@ var swiper2;
  */
 $(document).ready(function majorFunc() {
 
+  	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Сообщение отправлено");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
     /**
      * when screen`s min-width is 1100px add menu to top screen
      */
