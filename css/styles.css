@@ -410,6 +410,8 @@ img[src="img/dots.svg"] {
 }
 
 .section-2-slider-item p {
+    margin: 10px 0;
+    height: 22px;
     font-style: normal;
     text-align: center;
     font-weight: 600;
@@ -446,10 +448,6 @@ img[src="img/dots.svg"] {
     color: #333333;
 }
 
-.section-2-slider-item p {
-    margin: 20px 0;
-}
-
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
     .section-3-card-contentBlock button {
@@ -459,10 +457,6 @@ img[src="img/dots.svg"] {
 
 #section-2 .column {
     justify-content: space-around;
-}
-
-.section-2-slider-item p {
-    height: 40px;
 }
 
 #section-3 {
