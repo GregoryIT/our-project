@@ -767,11 +767,6 @@ img[src="img/pl.jpg"] {
     background-image: url("../img/services/arow-right.svg");
 }
 
-.swiper2 {
-    display: flex;
-    flex-direction: column;
-}
-
 #section-5-feedback {
     background: #F9FAFB;
     padding-bottom: 30px;
