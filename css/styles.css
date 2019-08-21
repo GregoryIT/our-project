@@ -438,9 +438,8 @@ img[src="img/dots.svg"] {
     }
 }
 
-.section-2-slider-item button {
+.section-2-slider-item a {
     width: 140px;
-    height: 40px;
     margin: 0 auto;
     border: 2px solid #377EF9;
     background: rgba(241, 241, 241, 0.9077);
@@ -451,15 +450,14 @@ img[src="img/dots.svg"] {
     line-height: 22px;
     color: #377EF9;
     opacity: 0.9;
+    padding: 7px 15px;
+    display: inline-block;
 }
 
-.section-2-slider-item button a {
-    padding: 75px 15px;
-}
-
-.section-2-slider-item button:hover {
+.section-2-slider-item a:hover {
     color: #146aff;
     border-color: #146aff;
+    text-decoration: none;
 }
 
 .title {

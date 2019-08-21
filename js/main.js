@@ -41,6 +41,18 @@ $(document).ready(function majorFunc() {
         }, 1000);
     });
 
+    $(".order-scroll").on("click", function (event) {
+        event.preventDefault();
+
+        var id = $('a', this).attr('href'),
+            fixedTopBarHeight = $('.top-bar.fixed').outerHeight() || 0,
+            top = $(id).offset().top - fixedTopBarHeight;
+
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    });
+
     /**
      * add sliders behavior
      */
