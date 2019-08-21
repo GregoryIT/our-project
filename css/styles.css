@@ -1,4 +1,4 @@
-/* СБРОС СТИЛЕЙ */
+/* STYLE RESET */
 
 * {
     margin: 0;
@@ -36,7 +36,7 @@ swiper-button-next1 {
     cursor: pointer;
 }
 
-/* КОНТЕЙНЕРЫ И СТРОКИ */
+/* CONTAINERS AND RAWS */
 
 .container {
     max-width: 1140px;
@@ -62,7 +62,7 @@ swiper-button-next1 {
     justify-content: space-between;
 }
 
-/* ШРИФТ */
+/* FONT */
 
 html,
 body {
@@ -76,7 +76,7 @@ body {
     border-radius: 10px;
 }
 
-/* ЛИПКОЕ МЕНЮ */
+/* STICKY MENU */
 
 .top-bar {
     padding: 24px 0;
@@ -203,7 +203,7 @@ img[src="img/logo.svg"] {
     }
 }
 
-/* ПЕРВАЯ СЕКЦИЯ */
+/* FIRST SECTION */
 
 .section-1-content {
     width: 100%;
@@ -397,7 +397,7 @@ img[src="img/dots.svg"] {
     z-index: 5000;
 }
 
-/* ВТОРАЯ СЕКЦИЯ */
+/* SECOND SECTION */
 
 #section-2 {
     background: rgba(241, 241, 241, 0.9077);
