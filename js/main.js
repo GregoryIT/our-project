@@ -8,22 +8,34 @@ var swiper2;
  */
 $(document).ready(function majorFunc() {
 
-  	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Сообщение отправлено");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+    //E-mail Ajax Send
+    $("form").submit(function (event) { //Change
+        setTimeout(function () {
+            if ($("#phone").hasClass("errValidForm")
+                || $("#formQuestions").hasClass("errValidForm")
+                || $("#userName").hasClass("errValidForm")
+                || $("#userEmail").hasClass("errValidForm") ){
+                event.preventDefault();
+                return false;
+            } else {
+                var th = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php", //Change
+                    data: th.serialize()
+                }).done(function () {
+                    alert("Сообщение отправлено");
+                    setTimeout(function () {
+                        // Done Functions
+                        th.trigger("reset");
+                    }, 1000);
+                });
+
+                return false;
+            }
+        }, 5);
+
+    });
 
     /**
      * when screen`s min-width is 1100px add menu to top screen
@@ -175,14 +187,14 @@ $(document).ready(function majorFunc() {
         .validate({
             rules: {
                 userEmail: {
-                    email: true
+                    email: true,
                 }
             },
             messages: {
                 userEmail: {
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
-                userPhone: 'Укажите ваш номер телеыона',
+                userPhone: 'Укажите ваш номер телефона',
                 formQuestions: 'Пожалуйста, выберите вопрос'
             },
             errorClass: 'errValidForm'
@@ -269,7 +281,7 @@ $(document).ready(function majorFunc() {
     /**
      * DESTROY OLD and write new SLIDERS! change a behavior Menu.
      */
-    window.onresize = function() {
+    window.onresize = function () {
         swiper5.destroy();
         swiper4.destroy();
         swiper1.destroy();
@@ -293,6 +305,7 @@ $(document).ready(function majorFunc() {
     $("#fade").modal({
         fadeDuration: 100
     });
+
 });
 
 
