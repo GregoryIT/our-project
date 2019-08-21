@@ -27,7 +27,6 @@ $(document).ready(function majorFunc() {
     $(".top-bar, \
        .collapse, \
        .collapse-navbar-menu, \
-       .section-1-content-right,\
        .order-scroll,\
        .section-1-arrow\
     ").on("click", "a", function (event) {
