@@ -1221,6 +1221,27 @@ button,
     z-index: 200;
 }
 
+#ex1.modal,
+#ex2.modal,
+#ex3.modal,
+#ex4.modal,
+#ex5.modal,
+#ex6.modal,
+#ex7.modal,
+#ex8.modal,
+#ex9.modal,
+#ex10.modal,
+#ex11.modal,
+#ex12.modal,
+#ex13.modal,
+#ex14.modal,
+#ex15.modal,
+#ex16.modal,
+#ex17.modal
+    {
+    box-shadow: 0 0 30px rgb(26, 26, 26);
+}
+
 .modal h1 {
     color: #404a50;
     font-weight: 800;
