@@ -1206,3 +1206,15 @@ button,
 .jquery-modal.blocker.current {
     z-index: 200;
 }
+
+.modal h1 {
+    color: #404a50;
+    font-weight: 800;
+    font-size: 1.75em;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+}
+
+.modal p {
+    line-height: 1.666;
+}
