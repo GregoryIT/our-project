@@ -17,22 +17,22 @@ $(document).ready(function majorFunc() {
                 || $("#userEmail").hasClass("errValidForm") ){
                 event.preventDefault();
                 return false;
-            } else {
-                var th = $(this);
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php", //Change
-                    data: th.serialize()
-                }).done(function () {
-                    alert("Сообщение отправлено");
-                    setTimeout(function () {
-                        // Done Functions
-                        th.trigger("reset");
-                    }, 1000);
-                });
-
-                return false;
             }
+
+            var th = $(this);
+            $.ajax({
+                type: "POST",
+                url: "mail.php", //Change
+                data: th.serialize()
+            }).done(function () {
+                alert("Сообщение отправлено");
+                setTimeout(function () {
+                    // Done Functions
+                    th.trigger("reset");
+                }, 1000);
+            });
+
+            return false;
         }, 5);
 
     });
@@ -298,14 +298,6 @@ $(document).ready(function majorFunc() {
         slidersBehavior();
         behaviorMenu();
     };
-
-    /**
-     * add transition affect for modal window
-     */
-    $("#fade").modal({
-        fadeDuration: 100
-    });
-
 });
 
 

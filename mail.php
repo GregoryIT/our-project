@@ -3,8 +3,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
-	$project_name = trim($_POST["project_name"]);
-	$admin_email  = trim($_POST["admin_email"]);
+	$project_name = trim($_POST["Visago"]);
+	$admin_email  = trim($_POST["5757992a@gmail.com"]);
 	$form_subject = trim($_POST["form_subject"]);
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
