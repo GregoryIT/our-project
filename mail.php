@@ -17,8 +17,8 @@ if ( $method === 'POST' ) {
 		}
 	}
 } else if ( $method === 'GET' ) {
-	$project_name = trim($_GET["project_name"]);
-	$admin_email  = trim($_GET["admin_email"]);
+	$project_name = trim($_GET["Visago"]);
+	$admin_email  = trim($_GET["5757992a@gmail.com"]);
 	$form_subject = trim($_GET["form_subject"]);
 	foreach ( $_GET as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {

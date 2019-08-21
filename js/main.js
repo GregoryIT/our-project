@@ -237,18 +237,21 @@ $(document).ready(function majorFunc() {
     /**
      * add listener for navbar-menu links(close navbar-menu)
      */
-    document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
-        item.addEventListener('click', function (e) {
+
+    var collapseNavLinks = document.querySelectorAll('#collapse-navbar a');
+    for (var i = 0; i < collapseNavLinks.length; i++) {
+        collapseNavLinks[i].addEventListener('click', function (e) {
             document.querySelector('#collapse-navbar').classList.remove('active');
             document.querySelector('#collapse-navbar').classList.remove('active-fixed');
         });
-    });
+    }
 
     behaviorMenu();
 
     /**
      * add behavior for the collapse
      */
+
     var collapse = function () {
         var data = $(".collapse").attr("data-collapse");
 
@@ -256,7 +259,6 @@ $(document).ready(function majorFunc() {
             var currentCollapseBody = $(this).parent().next(".collapse-body");
             $('.collapse-body').not(currentCollapseBody).slideUp();
             currentCollapseBody.slideToggle();
-
             if (data === "close") {
                 $(".collapse-body").slideUp();
                 if ($(this).hasClass("activeAccord")) {
@@ -271,12 +273,6 @@ $(document).ready(function majorFunc() {
         })
     }
     collapse();
-
-    document.querySelectorAll('#collapse-navbar a').forEach(function (item) {
-        item.addEventListener('click', function (e) {
-            document.querySelector('#collapse-navbar').classList.remove('active');
-        });
-    });
 
     /**
      * DESTROY OLD and write new SLIDERS! change a behavior Menu.
