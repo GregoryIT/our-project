@@ -11,7 +11,6 @@ $(document).ready(function majorFunc() {
     //E-mail Ajax Send
     $("form").submit(function (event) { //Change
         setTimeout(function () {
-            var self = this;
             if ($("#phone").hasClass("errValidForm")
                 || $("#formQuestions").hasClass("errValidForm")
                 || $("#userName").hasClass("errValidForm")
@@ -19,7 +18,7 @@ $(document).ready(function majorFunc() {
                 event.preventDefault();
                 return false;
             } else {
-                var th = $(self);
+                var th = $(this);
                 $.ajax({
                     type: "POST",
                     url: "mail.php", //Change
@@ -195,7 +194,7 @@ $(document).ready(function majorFunc() {
                 userEmail: {
                     email: 'Ваш адрес электронной почты должен быть в формате имя@домен.com'
                 },
-                userPhone: 'Укажите ваш номер телеыона',
+                userPhone: 'Укажите ваш номер телефона',
                 formQuestions: 'Пожалуйста, выберите вопрос'
             },
             errorClass: 'errValidForm'

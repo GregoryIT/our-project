@@ -926,7 +926,8 @@ img[src="img/pl.jpg"] {
 
 /* active state */
 .section-5-form-group input:focus ~ label,
-.section-5-form-group input:valid ~ label,
+.section-5-form-group input.valid ~ label,
+/*.section-5-form-group input.my-class-valid ~ label,*/
 .section-5-form-group .errValidForm ~ label {
     top: -15px;
     font-size: 14px;
