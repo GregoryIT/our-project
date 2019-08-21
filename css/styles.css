@@ -431,6 +431,13 @@ img[src="img/dots.svg"] {
     color: #25233A;
 }
 
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .section-2-slider-item p {
+        margin: -24px 0;
+    }
+}
+
 .section-2-slider-item button {
     width: 140px;
     height: 40px;
