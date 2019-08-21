@@ -447,8 +447,7 @@ img[src="img/dots.svg"] {
 }
 
 .section-2-slider-item button a {
-    display: inline-block;
-    padding: 6px 15px;
+    padding: 75px 15px;
 }
 
 .section-2-slider-item button:hover {
