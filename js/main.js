@@ -8,35 +8,6 @@ var swiper2;
  */
 $(document).ready(function majorFunc() {
 
-    //E-mail Ajax Send
-    $("form").submit(function (event) { //Change
-        setTimeout(function () {
-            if ($("#phone").hasClass("errValidForm")
-                || $("#formQuestions").hasClass("errValidForm")
-                || $("#userName").hasClass("errValidForm")
-                || $("#userEmail").hasClass("errValidForm") ){
-                event.preventDefault();
-                return false;
-            }
-
-            var th = $(this);
-            $.ajax({
-                type: "POST",
-                url: "mail.php", //Change
-                data: th.serialize()
-            }).done(function () {
-                alert("Сообщение отправлено");
-                setTimeout(function () {
-                    // Done Functions
-                    th.trigger("reset");
-                }, 1000);
-            });
-
-            return false;
-        }, 5);
-
-    });
-
     /**
      * when screen`s min-width is 1100px add menu to top screen
      */
@@ -294,6 +265,38 @@ $(document).ready(function majorFunc() {
         slidersBehavior();
         behaviorMenu();
     };
+
+    //E-mail Ajax Send
+    $("form").submit(function (event) { //Change
+        if ($("#phone").hasClass("errValidForm")
+            || $("#formQuestions").hasClass("errValidForm")
+            || $("#userName").hasClass("errValidForm")
+            || $("#userEmail").hasClass("errValidForm")) {
+            event.preventDefault();
+            return false;
+        }
+
+        var th = $(this);
+
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            setTimeout(function () {
+                // Done Functions
+                $("#modalSuccess").modal({
+                    fadeDuration: 100
+                });
+                // alert('fsa');
+                th.trigger("reset");
+            }, 1000);
+        });
+
+        return false;
+
+    });
+
 });
 
 
