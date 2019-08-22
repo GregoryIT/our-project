@@ -76,6 +76,9 @@ body {
     z-index: 2005;
 }
 
+#our-logo {
+    width: 140px;
+}
 .container {
     z-index: 2005;
 }
