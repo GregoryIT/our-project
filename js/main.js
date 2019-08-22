@@ -284,6 +284,7 @@ $(document).ready(function majorFunc() {
             return false;
         }
 
+
         var th = $(this);
 
         $.ajax({
@@ -301,27 +302,35 @@ $(document).ready(function majorFunc() {
             }, 1000);
         });
 
+
+
+
+        var customName = th[0][3].value || 'no-name';
+        var customEmail = th[0][4].value || 'no-email';
+        var customPhone = th[0][5].value;
+        var customQuestion = th[0][6].value;
+        // debugger;
+        // $.ajax({
+        //     type: "POST",
+        //     url: "https://visabyamo.amocrm.ru/api/v2/contacts", //Change
+        //     data: {
+        //         add: [{
+        //             name: customName,
+        //             custom_fields: [{
+        //                 id: "627259",
+        //                 values: [{
+        //                     value: customQuestion
+        //                 }]
+        //             }]
+        //         }]
+        //     }
+        // });
+
+
+
         return false;
 
     });
 
-    /**
-     * add listener for textarea in first slider(add white color when we have value)
-     */
-    $(".rectangle").keydown(function () {
-        if ( $(this).val() === '') {
-            $(this).addClass("wite-bg");
-        }
-    });
-
-    /**
-     * add listener for textarea in first slider(del white color when we have not value)
-     */
-    $(".rectangle").change(function () {
-        if ($(this).val() === '') {
-            $(this).removeClass("wite-bg");
-        }
-    });
 });
-
 
