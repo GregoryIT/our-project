@@ -287,20 +287,20 @@ $(document).ready(function majorFunc() {
 
         var th = $(this);
 
-        // $.ajax({
-        //     type: "POST",
-        //     url: "mail.php", //Change
-        //     data: th.serialize()
-        // }).done(function () {
-        //     setTimeout(function () {
-        //         // Done Functions
-        //         $("#modalSuccess").modal({
-        //             fadeDuration: 100
-        //         });
-        //         // alert('fsa');
-        //         th.trigger("reset");
-        //     }, 1000);
-        // });
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            setTimeout(function () {
+                // Done Functions
+                $("#modalSuccess").modal({
+                    fadeDuration: 100
+                });
+                // alert('fsa');
+                th.trigger("reset");
+            }, 1000);
+        });
 
 
 
@@ -310,21 +310,21 @@ $(document).ready(function majorFunc() {
         var customPhone = th[0][5].value;
         var customQuestion = th[0][6].value;
         // debugger;
-        $.ajax({
-            type: "POST",
-            url: "https://visabyamo.amocrm.ru/api/v2/contacts", //Change
-            data: {
-                add: [{
-                    name: customName,
-                    custom_fields: [{
-                        id: "627259",
-                        values: [{
-                            value: customQuestion
-                        }]
-                    }]
-                }]
-            }
-        });
+        // $.ajax({
+        //     type: "POST",
+        //     url: "https://visabyamo.amocrm.ru/api/v2/contacts", //Change
+        //     data: {
+        //         add: [{
+        //             name: customName,
+        //             custom_fields: [{
+        //                 id: "627259",
+        //                 values: [{
+        //                     value: customQuestion
+        //                 }]
+        //             }]
+        //         }]
+        //     }
+        // });
 
 
 
