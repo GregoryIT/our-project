@@ -310,7 +310,7 @@ $(document).ready(function majorFunc() {
      */
     $(".rectangle").keydown(function () {
         if ( $(this).val() === '') {
-            $(this).addClass("wite-bg");
+            $(this).addClass("white-bg");
         }
     });
 
@@ -319,7 +319,7 @@ $(document).ready(function majorFunc() {
      */
     $(".rectangle").change(function () {
         if ($(this).val() === '') {
-            $(this).removeClass("wite-bg");
+            $(this).removeClass("white-bg");
         }
     });
 });
