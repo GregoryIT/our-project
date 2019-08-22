@@ -76,6 +76,10 @@ body {
     border-radius: 10px;
 }
 
+.rectangle.wite-bg {
+    background-color: #fff;
+}
+
 /* STICKY MENU */
 
 .top-bar {

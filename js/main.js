@@ -91,9 +91,6 @@ $(document).ready(function majorFunc() {
 
         swiper5 = new Swiper('.swiper5', {
             direction: 'horizontal',
-            autoplay: {
-                delay: 5000,
-            },
             loop: true,
             initialSlide: 0,
             speed: 400,
@@ -308,6 +305,23 @@ $(document).ready(function majorFunc() {
 
     });
 
+    /**
+     * add listener for textarea in first slider(add white color when we have value)
+     */
+    $(".rectangle").keydown(function () {
+        if ( $(this).val() === '') {
+            $(this).addClass("wite-bg");
+        }
+    });
+
+    /**
+     * add listener for textarea in first slider(del white color when we have not value)
+     */
+    $(".rectangle").change(function () {
+        if ($(this).val() === '') {
+            $(this).removeClass("wite-bg");
+        }
+    });
 });
 
 
