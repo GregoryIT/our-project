@@ -69,17 +69,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.rectangle {
-    width: 5px;
-    height: 5px;
-    background: #25233A;
-    border-radius: 10px;
-}
-
-.rectangle.wite-bg {
-    background-color: #fff;
-}
-
 /* STICKY MENU */
 
 .top-bar {
@@ -236,7 +225,7 @@ img[src="img/dots.svg"] {
     margin-bottom: 40px;
 }
 
-.section-1-content-left p {
+.heder-first-slider {
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -246,32 +235,9 @@ img[src="img/dots.svg"] {
 }
 
 @media screen and (max-width: 710px) {
-    .section-1-content-left p {
+    .heder-first-slider  {
         font-size: 24px;
         line-height: 29px;
-    }
-}
-
-.rectangle {
-    width: 432px;
-    height: 91px;
-    left: 149px;
-    top: 330px;
-    background: #C4C4C4;
-    padding: 20px;
-}
-
-@media screen and (max-width: 710px) {
-    .rectangle {
-        width: 349px;
-        height: 91px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .rectangle {
-        width: 260px;
-        height: 80px;
     }
 }
 
@@ -1259,3 +1225,6 @@ div.modal a.close-modal {
     background-size: 60%;
 }
 
+.first-button-order {
+    color: #dc3545;
+}
