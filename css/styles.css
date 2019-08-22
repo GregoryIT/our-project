@@ -645,6 +645,10 @@ img[src="img/pl.jpg"] {
     .section-3-card-contentBlock-button {
         width: 200px;
     }
+
+    .section-3-card-contentBlock button a {
+        padding: 15px 60px;
+    }
 }
 
 #section-3 .column {
