@@ -7,7 +7,7 @@ This is landing page on visa support topics.
 HTML5, CSS, JS, jQuery, Swiper slider.
 
 ### Visual representation:
-[our-project](https://andreilavrov.github.io/our-project)
+[visago.by](https://visago.by)
 
 ### Browsers support:
 Last versions of Chrome, Firefox, Safari, Edge, IE.
