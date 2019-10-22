@@ -1,0 +1,141 @@
+img[src="../img/dots.svg"] {
+  width: 90px;
+}
+
+.section-1-content-left {
+  margin: 0;
+  height: 280px;
+  max-width: 460px;
+}
+
+.section-1-content-left-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.section-4-slider-item {
+  margin: 10px;
+}
+
+.section-chooseUS {
+  padding: 50px 0;
+}
+
+.section-chooseUS-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fb765f;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.chooseUS-table {
+  /* padding: 10px; */
+  margin: 0 auto;
+}
+
+.chooseUS-table-block {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 309px;
+  height: 199px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.chooseUS-table-block-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #25233a;
+}
+
+.descripton-img {
+  margin-bottom: 10px;
+  margin-left: calc(50% - 30px);
+}
+
+@media (max-width: 700px) {
+  .section-1-content-left {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .section-1-content-left {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .team-img {
+    width: 300px;
+    height: 300px;
+  }
+  .chooseUS-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .chooseUS-table-block {
+    margin: 25px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .chooseUS-table {
+    height: 670px;
+    width: 1140px;
+  }
+
+  .chooseUS-table-block {
+    box-shadow: 0px 4px 15px rgba(63, 61, 86, 0.1);
+  }
+  .team-img {
+    transform: translate(-15px, 80px);
+    margin-left: calc(50% - 240px);
+  }
+
+  .chooseUS-table-block-block-1 {
+    position: absolute;
+  }
+
+  .chooseUS-table-block-block-2 {
+    position: absolute;
+    right: 0;
+    transform: translate();
+  }
+
+  .chooseUS-table-block-block-3 {
+    position: absolute;
+    transform: translate(0, 250px);
+  }
+  .chooseUS-table-block-block-4 {
+    position: absolute;
+    right: 0;
+    transform: translate(0, 250px);
+  }
+  .chooseUS-table-block-block-5 {
+    position: absolute;
+    transform: translate(200px, 520px);
+  }
+  .chooseUS-table-block-block-6 {
+    position: absolute;
+
+    transform: translate(550px, 520px);
+  }
+}
